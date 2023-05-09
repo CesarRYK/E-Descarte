@@ -1,11 +1,11 @@
 import {View, Text, StyleSheet, Pressable} from 'react-native';
 
-export default Profile;
+export default Profile_login;
 
-function Profile() {
+function Profile_login() {
     return(
         <View style={styles.container} >
-            <Text>Página de Perfil</Text>
+            <Text style={styles.textColor}>Página de Perfil</Text>
             <Pressable>
                 <Text>Ok</Text>
             </Pressable>
@@ -20,5 +20,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
 
     },
+    textColor: {
+        color: '#f33d3',
+
+    },
 });
+
 

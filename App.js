@@ -3,7 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './screens/Home';
-import Profile from './screens/Profile';
+import Profile_login from './screens/Profile_login';
+import Profile_register from './screens/Profile_register';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,12 +17,18 @@ export default function App() {
           component={Home}
         />
         <Stack.Screen
-          name='Profile'
-          component={Profile}
+          name='Profile_login'
+          component={Profile_login}
+      
+        />
+        <Stack.Screen
+          name='Profile_register'
+          component={Profile_register}
         />
       </Stack.Navigator>
       <StatusBar/>
     </NavigationContainer>
   );
 }
+
 
