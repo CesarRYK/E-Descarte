@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 
     },
     textColor: {
-        color: '#f33d3',
+        color: '#f5fffa',
 
     },
 });
