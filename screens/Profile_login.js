@@ -1,13 +1,21 @@
-import {View, Text, StyleSheet, Pressable} from 'react-native';
+import {View, Text, StyleSheet, TextInput, TouchableOpacity, Pressable} from 'react-native';
 
 export default Profile_login;
 
-function Profile_login() {
-    return(
+function Profile_login({ navigation }) {
+     return(
         <View style={styles.container} >
-            <Text style={styles.textColor}>Página de Perfil</Text>
-            <Pressable>
-                <Text>Ok</Text>
+            <TouchableOpacity>
+            <TextInput style={styles.textColor}>Insira seu email...
+                </TextInput>
+                </TouchableOpacity>
+            <TouchableOpacity>
+                <Text style={styles.textColor}>Insira sua senha...
+                </Text>
+            </TouchableOpacity>
+            <Pressable 
+            onPress={() => navigation.navigate('TelaInicial')}>
+                <Text style={styles.textColor}>Avançar</Text>
             </Pressable>
         </View>
     );
@@ -18,12 +26,21 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#0ce8c0',
 
     },
     textColor: {
-        color: '#f5fffa',
+        color: '#5f9ea0',
+        borderWidth: 3,
+        borderColor: '#000000',
+        backgroundColor: '#f8f8ff',
+        padding: 8,
+        borderRadius: 40,
+        marginBottom: 20,
 
     },
-});
+
+    },
+);
 
 
