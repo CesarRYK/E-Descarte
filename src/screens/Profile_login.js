@@ -1,8 +1,6 @@
 import {View, Text, StyleSheet, TextInput, TouchableOpacity, Pressable} from 'react-native';
 
-export default Profile_login;
-
-function Profile_login({ navigation }) {
+ export default function Profile_login({ navigation }) {
      return(
         <View style={styles.container} >
             <TouchableOpacity>
@@ -14,7 +12,7 @@ function Profile_login({ navigation }) {
                 </Text>
             </TouchableOpacity>
             <Pressable 
-            onPress={() => navigation.navigate('TelaInicial')}>
+            onPress={() => navigation.navigate('Tabnav')}>
                 <Text style={styles.textColor}>Avançar</Text>
             </Pressable>
         </View>

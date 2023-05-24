@@ -1,14 +1,14 @@
-import {View, Text, StyleSheet,} from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet} from 'react-native';
 
-export default Perfil;
+export default Amigos;
 
-function Perfil() {
+function Amigos() {
     return (
-        <View style={styles.container}>
-            <Text style={styles.textColor}>Fernando</Text>
-            <Text style={styles.textColor}>Configurações</Text>
-            
-        </View>
+       <View style={styles.container}>
+                <Text style={styles.textColor}>João</Text>
+                <Text style={styles.textColor}>Pedro</Text>
+       </View> 
     );
 }
 
@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#0ce8c0',
 
-        
     },
     textColor: {
         color: '#5f9ea0',
@@ -29,9 +28,8 @@ const styles = StyleSheet.create({
         padding: 8,
         borderRadius: 40,
         marginBottom: 20,
+
     },
 
-    borda: {
-
-    }
-});
+    },
+);
