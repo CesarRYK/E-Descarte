@@ -1,8 +1,13 @@
-import {View, Text, StyleSheet, TextInput, TouchableOpacity, Pressable} from 'react-native';
+import {View, Text, StyleSheet, TextInput, TouchableOpacity, Pressable, ImageBackground} from 'react-native';
 
  export default function Profile_login({ navigation }) {
      return(
         <View style={styles.container} >
+            <ImageBackground
+                style={styles.stretch}
+                source={require('./imagens/Fundo.png')}
+                resizeMode="cover"
+            />            
             <TouchableOpacity>
             <TextInput style={styles.textColor}>Insira seu email...
                 </TextInput>
@@ -27,14 +32,24 @@ const styles = StyleSheet.create({
         backgroundColor: '#0ce8c0',
 
     },
+    stretch: {
+        width: 400,
+        top: -115,
+        flex: 1,
+        height: 800,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+    },
     textColor: {
         color: '#5f9ea0',
         borderWidth: 3,
         borderColor: '#000000',
+        borderColor: '#f5fffa',
         backgroundColor: '#f8f8ff',
         padding: 8,
         borderRadius: 40,
         marginBottom: 20,
+        top:-250,
 
     },
 

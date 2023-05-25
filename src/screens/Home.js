@@ -1,10 +1,15 @@
-import { StyleSheet, View, Pressable, Text,  } from 'react-native';
+import { StyleSheet, View, Pressable, Text, ImageBackground  } from 'react-native';
 
 export default Home;
 
 function Home({ navigation }) {
     return (
         <View style={styles.container}>
+            <ImageBackground
+                style={styles.stretch}
+                source={require('./imagens/Home.jpeg')}
+                resizeMode="cover"
+            />            
             <Pressable style={styles.buttonContainer}
             onPress={() => navigation.navigate('Profile_login') }>
                 <Text style={styles.textColor}>ENTRAR</Text>
@@ -25,14 +30,24 @@ const styles = StyleSheet.create({
         backgroundColor: '#0ce8c0',
 
     },
-
+    stretch: {
+        width: 400,
+        top: -115,
+        flex: 1,
+        height: 800,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+    },
     buttonContainer: {
         borderWidth: 3,
         borderColor: '#f5fffa',
-        backgroundColor: '#3cb371',
+        backgroundGradient: "vertical",
+        backgroundGradientTop: "#333333",
+        backgroundGradientBottom: "#666666",
         padding: 15,
         borderRadius: 40,
         marginBottom: 20,
+        top:-100,
 
     },
 

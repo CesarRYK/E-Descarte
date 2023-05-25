@@ -1,10 +1,10 @@
-import {View, Text, StyleSheet,} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 export default Perfil;
 
 function Perfil() {
     return (
-        <View style={styles.container}>
+        <View style={styles.container}>          
             <Text style={styles.EDescarte}>E-DESCARTE</Text>
             <Text style={styles.Filtro}>PERFIL DO USUÁRIO</Text>
             <Text style={styles.Usuário}>Olá, Luiz</Text>

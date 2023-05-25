@@ -6,12 +6,19 @@ import { Foundation } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 
+
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Image, ImageBackground} from 'react-native';
+
 
 export default function TelaInicial() {
     return(
         <View style={styles.container}>
+            <ImageBackground
+                style={styles.stretch}
+                source={require('./imagens/Fundo.png')}
+                resizeMode="cover"
+            />
             <Text style={styles.Coletas}>
                 <Entypo
                  name='shop'
@@ -51,7 +58,7 @@ export default function TelaInicial() {
             <Text style={styles.Sugestões}>
             <Ionicons
                  name='megaphone-outline'
-                    size={20}
+                 size={20}
                  color='#228b22'
                 />
                         
@@ -74,10 +81,18 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'baseline',
-        backgroundColor: '#0ce8c0',
+        backgroundColor: '#228b22',
 
         
     },
+    stretch: {
+        width: 490,
+        flex: 1,
+        height: 700,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+    },
+
     textColor: {
         color: '#5f9ea0',
         borderWidth: 3,
@@ -97,7 +112,7 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         left: 55,
-        top: 69,
+        top: 100,
     },
 
     Descartes: {
@@ -109,7 +124,7 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         left: 210,
-        top: -39,
+        top: -10,
 
     },
 
@@ -122,7 +137,7 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         left: 55,
-        top: -10,
+        top: 10,
 
         
     },
@@ -136,7 +151,7 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         left: 210,
-        top: -119,
+        top: -99,
     },
 
     Mapa: {
@@ -147,8 +162,8 @@ const styles = StyleSheet.create({
         padding: 34,
         borderRadius: 40,
         marginBottom: 20,
-        left: 57,
-        top: -90,
+        left: 55,
+        top: -80,
         fontSize: 17,
     },
 
@@ -160,8 +175,8 @@ const styles = StyleSheet.create({
         padding: 34,
         borderRadius: 40,
         marginBottom: 20,
-        left: 210,
-        top: -200,
+        left: 215,
+        top: -193,
     },
 
     Doação: {
