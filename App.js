@@ -20,7 +20,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen
-          name='Home'
+          name='Bem-vindo'
           component={Home}
         />
         <Stack.Screen

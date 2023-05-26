@@ -1,13 +1,20 @@
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet, ImageBackground} from 'react-native';
 
 export default Amigos;
 
 function Amigos() {
     return (
        <View style={styles.container}>
-                <Text style={styles.textColor}>João</Text>
-                <Text style={styles.textColor}>Pedro</Text>
+            <ImageBackground
+                style={styles.stretch}
+                source={require('./imagens/Fundo.png')}
+                resizeMode="cover"
+            />
+
+    
+                <Text style={styles.textColor1}>João</Text>
+                <Text style={styles.textColor2}>Pedro</Text>
        </View> 
     );
 }
@@ -20,7 +27,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#0ce8c0',
 
     },
-    textColor: {
+    textColor1: {
         color: '#5f9ea0',
         borderWidth: 3,
         borderColor: '#000000',
@@ -28,7 +35,26 @@ const styles = StyleSheet.create({
         padding: 8,
         borderRadius: 40,
         marginBottom: 20,
+        top: -280,
+    },
 
+    textColor2: {
+        color: '#5f9ea0',
+        borderWidth: 3,
+        borderColor: '#000000',
+        backgroundColor: '#f8f8ff',
+        padding: 8,
+        borderRadius: 40,
+        marginBottom: 20,
+        top: -270,
+    },
+
+    stretch: {
+        width: 490,
+        flex: 1,
+        height: 700,
+        resizeMode: 'cover',
+        justifyContent: 'center',
     },
 
     },

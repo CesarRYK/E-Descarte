@@ -1,10 +1,20 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground} from 'react-native';
+import { EvilIcons } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
+
 
 export default Perfil;
 
 function Perfil() {
     return (
-        <View style={styles.container}>          
+        <View style={styles.container}>
+                <ImageBackground
+                style={styles.stretch}
+                source={require('./imagens/Fundo.png')}
+                resizeMode="cover"
+            />
+
             <Text style={styles.EDescarte}>E-DESCARTE</Text>
             <Text style={styles.Filtro}>PERFIL DO USUÁRIO</Text>
             <Text style={styles.Usuário}>Olá, Luiz</Text>
@@ -14,7 +24,28 @@ function Perfil() {
             <Text style={styles.DadoPessoais}>Dados pessoais</Text>
             <Text style={styles.DesempenhoUsuario}>Desempenho do Usuário</Text>  
             <Text style={styles.Estatisticas}>+ Estatisticas</Text> 
-            <Text></Text>          
+            
+            <EvilIcons style={styles.Icone1}
+                name='user'
+                color={'#fff'}
+            />  
+
+            <Ionicons style={styles.Icone2}
+                name='rocket-outline'
+                color={'#fff'}
+            /> 
+
+            <FontAwesome style={styles.Icone3}
+                name='user-circle-o'
+                color={'#fff'}
+            />
+
+            <Ionicons style={styles.Icone4}
+                name='stats-chart-outline'
+                color={'#fff'}
+            
+            />
+
         </View>
     );
 }
@@ -35,30 +66,65 @@ const styles = StyleSheet.create({
         top: -80,
     },
 
+    Icone1: {
+        color: '#fff',
+        fontSize: 120,
+        top: -330,
+        left: 0,
+    },
+
+    Icone2: {
+        color: '#fff',
+        fontSize: 25,
+        top: -240,
+        left: 0,
+    },
+
+    Icone3: {
+        color: '#fff',
+        fontSize: 25,
+        top: -265,
+        left: -130,
+    },
+
+    Icone4: {
+        color: '#fff',
+        fontSize: 25,
+        top: -290,
+        left: 136,
+    },
+
+    Icone5: {
+        color: '#fff',
+        fontSize: 25,
+        top: 0,
+        left: 0,
+    },
+
     ExplorarPerfil: {
         color: '#fff',
         fontSize: 15,
         alignItems: 'center',
-        top: -90,
+        top: -85,
     },
 
     DadoPessoais: {
         color: '#fff',
-        top: -90,
+        top: -61,
         left: -135,
 
     },
 
    DesempenhoUsuario: {
         color: '#fff',
-        top: -109,
+        top: -80,
         alignItems: 'center',
     },
 
     Estatisticas: {
         color: '#fff',
         alignItems: 'center',
-        top: -129,
+        top: -99,
         left: 130,
     },
 
@@ -88,26 +154,33 @@ const styles = StyleSheet.create({
 
     Nivel: {
         color: '#228b22',
-        top: -210,
+        top: -180,
         left: -130,
     },
 
     EdPoints: {
         color: '#228b22',
-        top: -227,
+        top: -196,
         left: 130,
     },
 
     EDescarte: {
         color: '#fff',
-        top: -210,
+        top: -250,
         fontSize: 17,
     },
 
     Filtro: {
         color: '#228b22',
-        fontSize: 12,
-        top: -210,
-        alignItems: 'center',
+        fontSize: 13,
+        top: -245,
+    },
+
+    stretch: {
+        width: 490,
+        flex: 1,
+        height: 700,
+        resizeMode: 'cover',
+        justifyContent: 'center',
     },
 });
