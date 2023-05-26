@@ -19,35 +19,40 @@ export default function TelaInicial() {
                 source={require('./imagens/Fundo.png')}
                 resizeMode="cover"
             />
-            <Text style={styles.Coletas}>
+            
+            
+            <Text style={styles.Coletas}>Coleta
                 <Entypo
                  name='shop'
                     size={20}
                  color='#228b22'
                 />
             </Text>
+            
+            
             <Text style={styles.Descartes}>
             <MaterialCommunityIcons
-                 name='trash-can'
-                    size={20}
-                 color='#228b22'
+                name='trash-can'
+                size={20}
+                color='#228b22'
+                
                 />
-            </Text>
-            <Text style={styles.Tarefas}>
+            Descarte</Text>
+            <Text style={styles.Tarefas}>Tarefas
                 <Foundation
                     name='clipboard-notes'
                     size={20}      
                     color='#228b22'                
                 />
             </Text>
-            <Text style={styles.EdPoints}>
+            <Text style={styles.EdPoints}>EdPoints
             <MaterialCommunityIcons
                  name='medal-outline'
                     size={20}
                  color='#228b22'
                 />
             </Text>
-            <Text style={styles.Mapa}>
+            <Text style={styles.Mapa}>Mapa
             <FontAwesome5
                  name='map-marked-alt'
                     size={20}
@@ -55,7 +60,7 @@ export default function TelaInicial() {
                 />
             
             </Text>
-            <Text style={styles.Sugestões}>
+            <Text style={styles.Sugestões}>Sugestões
             <Ionicons
                  name='megaphone-outline'
                  size={20}
@@ -64,7 +69,7 @@ export default function TelaInicial() {
                         
             
             </Text>
-            <Text style={styles.Doação}>
+            <Text style={styles.Doação}>Doações
             <MaterialCommunityIcons
                  name='hand-heart-outline'
                     size={20}
