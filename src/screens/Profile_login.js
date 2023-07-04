@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, TextInput, TouchableOpacity, Pressable, ImageBackground} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} from 'react-native';
 
  export default function Profile_login({ navigation }) {
      return(
@@ -9,17 +9,20 @@ import {View, Text, StyleSheet, TextInput, TouchableOpacity, Pressable, ImageBac
                 resizeMode="cover"
             />            
             <TouchableOpacity>
-            <TextInput style={styles.textColor}>Insira seu email...
-                </TextInput>
+            <Text style={styles.textColor}>Insira seu email...
+                </Text>
                 </TouchableOpacity>
             <TouchableOpacity>
                 <Text style={styles.textColor}>Insira sua senha...
                 </Text>
             </TouchableOpacity>
-            <Pressable 
+            
+            <TouchableOpacity>
+            <Pressable
             onPress={() => navigation.navigate('Tabnav')}>
                 <Text style={styles.textColor}>Avançar</Text>
             </Pressable>
+            </TouchableOpacity>
         </View>
     );
 }
