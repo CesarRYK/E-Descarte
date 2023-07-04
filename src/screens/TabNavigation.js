@@ -80,5 +80,3 @@ function Tabnav() {
 }
 
 export default Tabnav;
-
-

@@ -1,4 +1,4 @@
-import { StyleSheet, View, Pressable, Text, ImageBackground  } from 'react-native';
+import { StyleSheet, View, Pressable, Text, ImageBackground, } from 'react-native';
 
 export default Home;
 
@@ -9,11 +9,13 @@ function Home({ navigation }) {
                 style={styles.stretch}
                 source={require('./imagens/Home.jpeg')}
                 resizeMode="cover"
-            />            
+            />
+
             <Pressable style={styles.buttonContainer}
             onPress={() => navigation.navigate('Profile_login') }>
                 <Text style={styles.textColor}>ENTRAR</Text>
             </Pressable>
+            
             <Pressable style={styles.buttonContainer} 
             onPress={() => navigation.navigate('Profile_register')}>
                 <Text style={styles.textColor}>REGISTRAR</Text>

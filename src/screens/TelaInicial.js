@@ -1,6 +1,5 @@
 import React from "react";
 
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { Entypo } from "@expo/vector-icons";
 import { Foundation } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
@@ -8,7 +7,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import {View, Text, StyleSheet, Image, ImageBackground} from 'react-native';
+import {View, Text, StyleSheet, Image, ImageBackground, TouchableOpacity} from 'react-native';
 
 
 export default function TelaInicial() {
@@ -20,24 +19,28 @@ export default function TelaInicial() {
                 resizeMode="cover"
             />
             
-            
+            <TouchableOpacity>
             <Text style={styles.Coletas}>Coleta
                 <Entypo
-                 name='shop'
+                    name='shop'
                     size={20}
-                 color='#228b22'
+                    color='#228b22'
                 />
             </Text>
+            </TouchableOpacity>
             
-            
-            <Text style={styles.Descartes}>
+            <TouchableOpacity>
+            <Text style={styles.Descartes}>Descarte
             <MaterialCommunityIcons
                 name='trash-can'
                 size={20}
                 color='#228b22'
                 
                 />
-            Descarte</Text>
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
             <Text style={styles.Tarefas}>Tarefas
                 <Foundation
                     name='clipboard-notes'
@@ -45,38 +48,52 @@ export default function TelaInicial() {
                     color='#228b22'                
                 />
             </Text>
+            </TouchableOpacity>
+
+            
+            <TouchableOpacity>
             <Text style={styles.EdPoints}>EdPoints
             <MaterialCommunityIcons
-                 name='medal-outline'
+                    name='medal-outline'
                     size={20}
-                 color='#228b22'
+                    color='#228b22'
                 />
             </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
             <Text style={styles.Mapa}>Mapa
             <FontAwesome5
-                 name='map-marked-alt'
+                    name='map-marked-alt'
                     size={20}
-                 color='#228b22'
+                    color='#228b22'
                 />
             
             </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
             <Text style={styles.Sugestões}>Sugestões
             <Ionicons
                  name='megaphone-outline'
                  size={20}
                  color='#228b22'
                 />
-                        
-            
+
             </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity>
             <Text style={styles.Doação}>Doações
             <MaterialCommunityIcons
-                 name='hand-heart-outline'
+                    name='hand-heart-outline'
                     size={20}
-                 color='#228b22'
+                    color='#228b22'
             />            
             
             </Text>
+            </TouchableOpacity>
+
         </View>
     );
 }
