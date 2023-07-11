@@ -6,12 +6,12 @@ import { StyleSheet } from 'react-native';
 
 
 import Home from './src/screens/Home';
-import Profile_login from './src/screens/Profile_login';
-import Profile_register from './src/screens/Profile_register';
+import Login from './src/screens/Profile_login';
+import Registro from './src/screens/Profile_register';
 import TelaInicial from './src/screens/TelaInicial';
 import Perfil from './src/screens/Perfil';
-import Tabnav from './src/screens/TabNavigation';
-import Amigos from './src/screens/Amigos';
+import Teste from './src/screens/TabNavigation';
+// import Amigos from './src/screens/Amigos';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,13 +24,13 @@ export default function App() {
           component={Home}
         />
         <Stack.Screen
-          name='Profile_login'
-          component={Profile_login}
+          name='Login'
+          component={Login}
 
         />
         <Stack.Screen
-          name='Profile_register'
-          component={Profile_register}
+          name='Registro'
+          component={Registro}
         />
 
         <Stack.Screen
@@ -44,14 +44,10 @@ export default function App() {
         />
 
         <Stack.Screen
-          name='Tabnav'
-          component={Tabnav}
+          name='Teste'
+          component={Teste}
         />
 
-        <Stack.Screen
-          name='Amigos'
-          component={Amigos}
-        />
 
       </Stack.Navigator>
       <StatusBar />

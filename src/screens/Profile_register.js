@@ -1,8 +1,8 @@
 import {View, Text, StyleSheet, Pressable, ImageBackground} from 'react-native';
 
-export default Profile_register;
+export default Registro;
 
-function Profile_register({ navigation }) {
+function Registro({ navigation }) {
     return(
         <View style={styles.container} >
             <ImageBackground
@@ -15,7 +15,7 @@ function Profile_register({ navigation }) {
             <Text style={styles.textColor}>Insira sua senha...</Text>
             <Text style={styles.textColor}>Insira seu telefone...</Text>
             <Pressable 
-            onPress={() => navigation.navigate('TelaInicial')}>
+            onPress={() => navigation.navigate('Teste')}>
                 <Text style={styles.textColor}>Avançar</Text>
             </Pressable>
         </View>

@@ -1,13 +1,14 @@
 import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} from 'react-native';
 
- export default function Profile_login({ navigation }) {
+ export default function Login({ navigation }) {
      return(
         <View style={styles.container} >
             <ImageBackground
                 style={styles.stretch}
                 source={require('./imagens/Fundo.png')}
-                resizeMode="cover"
-            />            
+                resizeMode="cover"        
+            />
+                  
             <TouchableOpacity>
             <Text style={styles.textColor}>Insira seu email...
                 </Text>
@@ -19,7 +20,7 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
             
             <TouchableOpacity>
             <Pressable
-            onPress={() => navigation.navigate('Tabnav')}>
+            onPress={() => navigation.navigate('Teste')}>
                 <Text style={styles.textColor}>Avançar</Text>
             </Pressable>
             </TouchableOpacity>
@@ -55,6 +56,11 @@ const styles = StyleSheet.create({
         top:-250,
 
     },
+
+    teste: {
+        width: 1,
+        up: -250,
+    },    
 
     },
 );

@@ -1,8 +1,7 @@
 import React from "react";
 
-import { Entypo } from "@expo/vector-icons";
+import { EvilIcons } from "@expo/vector-icons";
 import { Foundation } from "@expo/vector-icons";
-import { FontAwesome5 } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 
 
@@ -19,16 +18,19 @@ export default function TelaInicial() {
                 resizeMode="cover"
             />
             
-            <TouchableOpacity>
-            <Text style={styles.Coletas}>Coleta
-                <Entypo
-                    name='shop'
-                    size={20}
-                    color='#228b22'
+            <Text style={styles.textColor}>E-Descarte</Text>
+            <Text style={styles.Text3}>PÁGINA INICIAL</Text>
+            <Text style={styles.Text1}>Olá Luiz,</Text>
+            <Text style={styles.Text2}>Vamos começar!</Text>
+
+            <EvilIcons style={styles.Usuario}
+                name='user'
+                size={140}
+                color='#fff'
+                
                 />
-            </Text>
-            </TouchableOpacity>
-            
+
+
             <TouchableOpacity>
             <Text style={styles.Descartes}>Descarte
             <MaterialCommunityIcons
@@ -62,17 +64,6 @@ export default function TelaInicial() {
             </TouchableOpacity>
 
             <TouchableOpacity>
-            <Text style={styles.Mapa}>Mapa
-            <FontAwesome5
-                    name='map-marked-alt'
-                    size={20}
-                    color='#228b22'
-                />
-            
-            </Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
             <Text style={styles.Sugestões}>Sugestões
             <Ionicons
                  name='megaphone-outline'
@@ -83,16 +74,6 @@ export default function TelaInicial() {
             </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity>
-            <Text style={styles.Doação}>Doações
-            <MaterialCommunityIcons
-                    name='hand-heart-outline'
-                    size={20}
-                    color='#228b22'
-            />            
-            
-            </Text>
-            </TouchableOpacity>
 
         </View>
     );
@@ -116,25 +97,38 @@ const styles = StyleSheet.create({
     },
 
     textColor: {
-        color: '#5f9ea0',
-        borderWidth: 3,
-        borderColor: '#000000',
-        backgroundColor: '#f8f8ff',
-        padding: 8,
-        borderRadius: 40,
-        marginBottom: 20,
+        color: '#f0fff0',
+        fontSize: 28,
+        top: 15,
+        left: 142,
+       
     },
 
-    Coletas: {
-        color: '#5f9ea0',
-        borderWidth: 0,
-        borderColor: '#000000',
-        backgroundColor: '#fff',
-        padding: 34,
-        borderRadius: 40,
-        marginBottom: 20,
-        left: 55,
-        top: 100,
+    Text1: {
+        color: '#fff',
+        top: 80,
+        left: 170,
+        fontSize: 20,
+        textAlign: 'center',
+        fontWeight: 'bold',
+    },
+
+    Text2: {
+        color: '#fff',
+        top: 80,
+        left: 170,
+        fontSize: 20,
+    },
+
+    Text3: {
+        color: '#7fffd4',
+        top: 9,
+        left: 160,
+    },
+
+    Usuario: {
+        top: -20,
+        left: 40,
     },
 
     Descartes: {
@@ -145,9 +139,9 @@ const styles = StyleSheet.create({
         padding: 34,
         borderRadius: 40,
         marginBottom: 20,
-        left: 210,
-        top: -10,
-
+        left: 40,
+        top: 45,
+        fontSize: 18,
     },
 
     Tarefas: {
@@ -159,8 +153,8 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         left: 55,
-        top: 10,
-
+        top: 48,
+        fontSize: 18,
         
     },
 
@@ -172,21 +166,9 @@ const styles = StyleSheet.create({
         padding: 34,
         borderRadius: 40,
         marginBottom: 20,
-        left: 210,
-        top: -99,
-    },
-
-    Mapa: {
-        color: '#5f9ea0',
-        borderWidth: 0,
-        borderColor: '#000000',
-        backgroundColor: '#fff',
-        padding: 34,
-        borderRadius: 40,
-        marginBottom: 20,
-        left: 55,
-        top: -80,
-        fontSize: 17,
+        left: 220,
+        top: -179,
+        fontSize: 18,
     },
 
     Sugestões: {
@@ -198,18 +180,8 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         left: 215,
-        top: -193,
+        top: -175,
+        fontSize: 18,
     },
 
-    Doação: {
-        color: '#5f9ea0',
-        borderWidth: 0,
-        borderColor: '#000000',
-        backgroundColor: '#fff',
-        padding: 34,
-        borderRadius: 40,
-        marginBottom: 20,
-        left: 57,
-        top: -170,
-    },
 });

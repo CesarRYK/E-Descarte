@@ -8,11 +8,11 @@ import { Feather } from "@expo/vector-icons";
 import TelaInicial from './TelaInicial'
 import Perfil from './Perfil'
 import Mais from './Mais'
-import Amigos from './Amigos';
+// import Amigos from './Amigos';
 
 const Tab = createBottomTabNavigator();
 
-function Tabnav() {
+function Teste() {
     return(
         <Tab.Navigator
             initialRouteName='TelaInicial'
@@ -47,20 +47,7 @@ function Tabnav() {
                     ),
                 }}
             />
-            <Tab.Screen
-                name='Amigos'
-                component={Amigos}
-                options={{
-                    header: () => false,
-                    tabBarIcon: ({ color }) => (
-                        <MaterialCommunityIcons 
-                            name='account-group-outline'
-                            color={color}
-                            size={20}                      
-                        />
-                    ),
-                }}
-            />
+
             <Tab.Screen
                 name='Mais'
                 component={Mais}
@@ -79,4 +66,4 @@ function Tabnav() {
     );
 }
 
-export default Tabnav;
+export default Teste;
