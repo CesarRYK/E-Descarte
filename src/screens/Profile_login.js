@@ -10,20 +10,23 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
             />
                   
             <TouchableOpacity>
-            <Text style={styles.textColor}>Insira seu email...
+                
+            <Text style={styles.textColor}>Insira seu email ou número de telefone...
                 </Text>
                 </TouchableOpacity>
             <TouchableOpacity>
                 <Text style={styles.textColor}>Insira sua senha...
                 </Text>
             </TouchableOpacity>
-            
+                
             <TouchableOpacity>
             <Pressable
             onPress={() => navigation.navigate('Teste')}>
-                <Text style={styles.textColor}>Avançar</Text>
+                <Text style={styles.Avançar}>Continuar</Text>
             </Pressable>
             </TouchableOpacity>
+                <Text style={styles.Senha}>Esqueci minha senha
+                    </Text>
         </View>
     );
 }
@@ -57,9 +60,25 @@ const styles = StyleSheet.create({
 
     },
 
-    teste: {
-        width: 1,
-        up: -250,
+    Avançar: {
+        color: '#5f9ea0',
+        top: -100,
+        left: 1,
+        borderWidth: 3,
+        borderRadius: 40,
+        marginBottom: 20,
+        backgroundColor: '#f8f8ff',
+        borderColor: '#f5fffa',
+        padding: 8,
+        fontSize: 1,
+    },
+
+    Senha: {
+        color: '#fff',
+        top: -265,
+        left: 110,
+        textAlign: 'center',
+        textDecorationLine: 'underline'
     },    
 
     },
