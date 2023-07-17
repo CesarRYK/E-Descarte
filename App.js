@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet } from 'react-native';
+import MapView from 'react-native-maps';
 
 
 import Home from './src/screens/Home';
@@ -11,6 +12,7 @@ import Registro from './src/screens/Profile_register';
 import TelaInicial from './src/screens/TelaInicial';
 import Perfil from './src/screens/Perfil';
 import Teste from './src/screens/TabNavigation';
+import Mapa from './src/screens/Mapa';
 // import Amigos from './src/screens/Amigos';
 
 const Stack = createNativeStackNavigator();
@@ -48,6 +50,10 @@ export default function App() {
           component={Teste}
         />
 
+          <Stack.Screen
+          name='Mapa'
+          component={Mapa}
+        />
 
       </Stack.Navigator>
       <StatusBar />

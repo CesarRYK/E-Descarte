@@ -6,7 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import {View, Text, StyleSheet, Image, ImageBackground, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, Image, ImageBackground, TouchableOpacity, Pressable} from 'react-native';
 
 
 export default function TelaInicial() {
@@ -32,6 +32,8 @@ export default function TelaInicial() {
 
 
             <TouchableOpacity>
+                
+                <Pressable onPress={() => navigation.navigate('Mapa')}>
             <Text style={styles.Descartes}>Descarte
             <MaterialCommunityIcons
                 name='trash-can'
@@ -40,6 +42,7 @@ export default function TelaInicial() {
                 
                 />
             </Text>
+                </Pressable>
             </TouchableOpacity>
 
             <TouchableOpacity>
