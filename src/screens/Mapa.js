@@ -5,7 +5,7 @@ import MapView from 'react-native-maps';
 
 export default Mapa;
 
-function Mapa({ navigation }) {
+function Mapa({}) {
 return (
 <View>
 <MapView>
