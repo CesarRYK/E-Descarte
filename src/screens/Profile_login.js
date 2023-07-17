@@ -25,8 +25,10 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
                 <Text style={styles.Avançar}>Continuar</Text>
             </Pressable>
             </TouchableOpacity>
-                <Text style={styles.Senha}>Esqueci minha senha
+                <TouchableOpacity>
+                    <Text style={styles.Senha}>Esqueci minha senha
                     </Text>
+                </TouchableOpacity>
         </View>
     );
 }
@@ -50,7 +52,6 @@ const styles = StyleSheet.create({
     textColor: {
         color: '#5f9ea0',
         borderWidth: 3,
-        borderColor: '#000000',
         borderColor: '#f5fffa',
         backgroundColor: '#f8f8ff',
         padding: 8,
@@ -70,7 +71,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#f8f8ff',
         borderColor: '#f5fffa',
         padding: 8,
-        fontSize: 1,
     },
 
     Senha: {
