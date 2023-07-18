@@ -2,8 +2,9 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import MapView from 'react-native-maps';
+import {css} from './src/screens/css/Css';
 
 
 import Home from './src/screens/Home';
@@ -19,6 +20,7 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
+    
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen
@@ -54,11 +56,23 @@ export default function App() {
           name='Mapa'
           component={Mapa}
         />
-
+        
       </Stack.Navigator>
       <StatusBar />
     </NavigationContainer>
-  );
+
+    
+  ) : (
+    <View style={css.container}>
+        <View style={css.map}>
+
+        </View>
+
+        <View style={css.search}>
+
+      </View>
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
