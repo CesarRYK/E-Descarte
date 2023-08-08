@@ -1,4 +1,4 @@
-import { StyleSheet, View, Pressable, Text, ImageBackground, } from 'react-native';
+import { StyleSheet, View, Pressable, Text, ImageBackground } from 'react-native';
 
 export default Home;
 

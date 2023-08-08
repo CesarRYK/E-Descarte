@@ -47,6 +47,9 @@ export default function TelaInicial({ navigation }) {
             </TouchableOpacity>
 
             <TouchableOpacity>
+                
+            <Pressable 
+                onPress={() => navigation.navigate('Tarefas')}>
             <Text style={styles.Tarefas}>Tarefas
                 <Foundation
                     name='clipboard-notes'
@@ -54,10 +57,13 @@ export default function TelaInicial({ navigation }) {
                     color='#228b22'                
                 />
             </Text>
+                </Pressable>
             </TouchableOpacity>
 
             
             <TouchableOpacity>
+            <Pressable 
+                onPress={() => navigation.navigate('Rewards')}>
             <Text style={styles.EdPoints}>EdPoints
             <MaterialCommunityIcons
                     name='medal-outline'
@@ -65,9 +71,12 @@ export default function TelaInicial({ navigation }) {
                     color='#228b22'
                 />
             </Text>
+                </Pressable>
             </TouchableOpacity>
 
             <TouchableOpacity>
+                <Pressable 
+                onPress={() => navigation.navigate('Sugestão')}>
             <Text style={styles.Sugestões}>Sugestões
             <Ionicons
                  name='megaphone-outline'
@@ -76,6 +85,7 @@ export default function TelaInicial({ navigation }) {
                 />
 
             </Text>
+            </Pressable>
             </TouchableOpacity>
 
 

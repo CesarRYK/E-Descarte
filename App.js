@@ -3,8 +3,6 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, View } from 'react-native';
-import MapView from 'react-native-maps';
-import {css} from './src/screens/css/Css';
 
 
 import Home from './src/screens/Home';
@@ -14,7 +12,9 @@ import TelaInicial from './src/screens/TelaInicial';
 import Perfil from './src/screens/Perfil';
 import Teste from './src/screens/TabNavigation';
 import Mapa from './src/screens/Mapa';
-// import Amigos from './src/screens/Amigos';
+import Rewards from './src/screens/Rewards';
+import Tarefas from './src/screens/Tarefas';
+import Sugestão from './src/screens/Sugestões';
 
 const Stack = createNativeStackNavigator();
 
@@ -56,22 +56,27 @@ export default function App() {
           name='Mapa'
           component={Mapa}
         />
+
+      <Stack.Screen
+          name='Rewards'
+          component={Rewards}
+        />
+
+      <Stack.Screen
+          name='Sugestão'
+          component={Sugestão}
+        />
+
+        <Stack.Screen
+          name='Tarefas'
+          component={Tarefas}
+        />
         
       </Stack.Navigator>
       <StatusBar />
     </NavigationContainer>
 
     
-  ) : (
-    <View style={css.container}>
-        <View style={css.map}>
-
-        </View>
-
-        <View style={css.search}>
-
-      </View>
-    </View>
   )
 }
 
