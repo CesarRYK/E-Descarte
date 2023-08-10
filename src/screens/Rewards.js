@@ -10,6 +10,10 @@ function Rewards({}) {
                 source={require('./imagens/Fundo.png')}
                 resizeMode="cover"
             />
+
+            <Text>
+                
+            </Text>
         </View>
     );
 }

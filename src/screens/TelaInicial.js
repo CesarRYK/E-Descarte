@@ -156,6 +156,7 @@ const styles = StyleSheet.create({
         left: 40,
         top: 45,
         fontSize: 18,
+        width: 161,
     },
 
     Tarefas: {
@@ -166,9 +167,10 @@ const styles = StyleSheet.create({
         padding: 34,
         borderRadius: 40,
         marginBottom: 20,
-        left: 55,
-        top: 48,
+        left: 48,
+        top: 50,
         fontSize: 18,
+        width: 150,
         
     },
 

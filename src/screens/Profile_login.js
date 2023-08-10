@@ -8,6 +8,8 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
                 source={require('./imagens/Fundo.png')}
                 resizeMode="cover"        
             />
+
+        
                   
             <TouchableOpacity>
                 
@@ -30,6 +32,7 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
                     </Text>
                 </TouchableOpacity>
         </View>
+        
     );
 }
 
@@ -58,12 +61,12 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         top:-250,
-
+        width: 370,
     },
 
     Avançar: {
         color: '#5f9ea0',
-        top: -100,
+        top: -250,
         left: 1,
         borderWidth: 3,
         borderRadius: 40,
@@ -71,6 +74,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#f8f8ff',
         borderColor: '#f5fffa',
         padding: 8,
+        width: 300,
+        textAlign: 'center',
+        
     },
 
     Senha: {
@@ -78,7 +84,7 @@ const styles = StyleSheet.create({
         top: -265,
         left: 110,
         textAlign: 'center',
-        textDecorationLine: 'underline'
+        textDecorationLine: 'underline',
     },    
 
     },

@@ -10,7 +10,7 @@ const App = () => (
         resizeMode="cover"
     />
     <TouchableOpacity>
-     <Text style={styles.text}>Pesquise aqui 
+     <Text style={styles.text}>    Pesquise aqui 
        </Text>
         </TouchableOpacity>
   
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     padding: 9,
     borderRadius: 20,
     marginBottom: 2,
-    top:-660,
+    top:-620,
   },
 });
 

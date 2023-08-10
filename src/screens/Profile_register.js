@@ -16,7 +16,7 @@ function Registro({ navigation }) {
             <Text style={styles.textColor}>Insira seu telefone...</Text>
             <Pressable 
             onPress={() => navigation.navigate('Teste')}>
-                <Text style={styles.textColor}>Avançar</Text>
+                <Text style={styles.avancar}>Avançar</Text>
             </Pressable>
         </View>
     );
@@ -45,7 +45,23 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         top: -200,
+        width: 300,
+        
     },
+
+    avancar: {
+        color: '#5f9ea0',
+        borderWidth: 3,
+        borderColor: '#000000',
+        backgroundColor: '#f8f8ff',
+        borderColor: '#f5fffa',
+        padding: 8,
+        borderRadius: 40,
+        marginBottom: 20,
+        width: 200,
+        top: -200,
+        textAlign: 'center',
+    }
 
 
 });

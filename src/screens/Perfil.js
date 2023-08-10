@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, ImageBackground} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground, ImageViewer} from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
@@ -14,6 +14,7 @@ function Perfil() {
                 source={require('./imagens/Fundo.png')}
                 resizeMode="cover"
             />
+
 
             <Text style={styles.EDescarte}>E-DESCARTE</Text>
             <Text style={styles.Filtro}>PERFIL DO USUÁRIO</Text>
@@ -47,6 +48,7 @@ function Perfil() {
             />
 
         </View>
+        
     );
 }
 
