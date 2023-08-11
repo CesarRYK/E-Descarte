@@ -1,6 +1,9 @@
-
+import { FontAwesome } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import React from 'react';
-import { ImageBackground, StyleSheet, Text, View, TouchableOpacity  } from 'react-native';
+import { ImageBackground, StyleSheet, Text, View, TouchableOpacity, Pressable, navigation } from 'react-native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 
 const App = () => (
   <View style={styles.container}>
@@ -9,10 +12,29 @@ const App = () => (
         source={require('./mapa.jpeg')}
         resizeMode="cover"
     />
+
     <TouchableOpacity>
      <Text style={styles.text}>    Pesquise aqui 
        </Text>
         </TouchableOpacity>
+        
+        
+        <TouchableOpacity>
+       
+                  
+            <Text style={styles.Descartes}>
+            <MaterialCommunityIcons
+                name='trash-can'
+                size={20}
+                color='#228b22'
+                align= 'center'
+                
+                
+                />
+            </Text>
+               
+                </TouchableOpacity>
+            
   
   </View>
 );
@@ -24,19 +46,38 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    resizeMode: 'cover',
+    resizeMode: 'center',
     justifyContent: 'center',
+    top: 19,
   },
   text: {
     color: '#5f9ea0',
-    borderWidth: 1,
-    borderColor: '#f5fffa',
+    
+    borderColor: '#90ee90',
     backgroundColor: '#f8f8ff',
-    padding: 9,
+    padding: 8,
     borderRadius: 20,
-    marginBottom: 2,
-    top:-620,
+    
+    top:-550,
+    width: 350,
+    left: 15,
   },
+
+  Descartes: {
+    color: '#5f9ea0',
+    borderWidth: 0,
+    borderColor: '#000000',
+    backgroundColor: '#fff',
+    padding: 15,
+    borderRadius: 40,
+    
+    left: 40,
+    top: -293,
+    width: 46,
+    
+},
+
+
 });
 
 export default App;
