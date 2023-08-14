@@ -26,6 +26,7 @@ export default function App() {
         <Stack.Screen
           name='Bem-vindo'
           component={Home}
+          
         />
         <Stack.Screen
           name='Login'
