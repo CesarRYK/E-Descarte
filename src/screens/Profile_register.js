@@ -15,7 +15,7 @@ function Registro({ navigation }) {
             <Text style={styles.textColor}>Insira sua senha...</Text>
             <Text style={styles.textColor}>Insira seu telefone...</Text>
             <Pressable 
-            onPress={() => navigation.navigate('Teste')}>
+            onPress={() => navigation.navigate('Inicio')}>
                 <Text style={styles.avancar}>Avançar</Text>
             </Pressable>
         </View>

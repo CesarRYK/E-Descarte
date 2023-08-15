@@ -6,7 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import {View, Text, StyleSheet, Image, ImageBackground, TouchableOpacity, Pressable} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground, TouchableOpacity, Pressable} from 'react-native';
 
 
 export default function TelaInicial({ navigation }) {

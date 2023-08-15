@@ -42,21 +42,20 @@ const styles = StyleSheet.create({
     Configuracoes: {
         color: '#5f9ea0',
         borderWidth: 1,
-        borderColor: '#f5fffa',
+        borderColor: '#000000',
         backgroundColor: '#f8f8ff',
         padding: 5,
         marginBottom: 0,
         borderRadius: 10,
         top: 10,
-        left: 0,
+        left: 5,
         width: 200,
-        borderRightWidth: 10,
     },
 
     politica: {
         color: '#5f9ea0',
         borderWidth: 1,
-        borderColor: '#f5fffa',
+        borderColor: '#000000',
         backgroundColor: '#f8f8ff',
         padding: 5,
         marginBottom: 0,
@@ -68,7 +67,7 @@ const styles = StyleSheet.create({
     sobre: {
         color: '#5f9ea0',
         borderWidth: 1,
-        borderColor: '#f5fffa',
+        borderColor: '#000000',
         backgroundColor: '#f8f8ff',
         padding: 5,
         marginBottom: 0,
@@ -80,7 +79,7 @@ const styles = StyleSheet.create({
     acessibilidade: {
         color: '#5f9ea0',
         borderWidth: 1,
-        borderColor: '#f5fffa',
+        borderColor: '#000000',
         backgroundColor: '#f8f8ff',
         padding: 5,
         marginBottom: 0,
@@ -92,7 +91,7 @@ const styles = StyleSheet.create({
     conta: {
         color: '#5f9ea0',
         borderWidth: 1,
-        borderColor: '#f5fffa',
+        borderColor: '#000000',
         backgroundColor: '#f8f8ff',
         padding: 5,
         marginBottom: 0,
@@ -104,7 +103,7 @@ const styles = StyleSheet.create({
     sair: {
         color: '#5f9ea0',
         borderWidth: 1,
-        borderColor: '#f5fffa',
+        borderColor: '#000000',
         backgroundColor: '#f8f8ff',
         padding: 5,
         marginBottom: 0,
@@ -116,7 +115,7 @@ const styles = StyleSheet.create({
     suporte: {
         color: '#5f9ea0',
         borderWidth: 1,
-        borderColor: '#f5fffa',
+        borderColor: '#000000',
         backgroundColor: '#f8f8ff',
         padding: 5,
         marginBottom: 0,

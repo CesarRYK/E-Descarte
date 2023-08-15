@@ -23,7 +23,7 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
                 
             <TouchableOpacity>
             <Pressable
-            onPress={() => navigation.navigate('Teste')}>
+            onPress={() => navigation.navigate('Inicio')}>
                 <Text style={styles.Avançar}>Continuar</Text>
             </Pressable>
             </TouchableOpacity>

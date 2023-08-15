@@ -1,6 +1,4 @@
 import React from "react";
-// import MaterialBottomTabNavigator from 'react-native-vector-icon/MaterialBottomTabNavigator';
-//import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
@@ -8,11 +6,10 @@ import { Feather } from "@expo/vector-icons";
 import TelaInicial from './TelaInicial'
 import Perfil from './Perfil'
 import Mais from './Mais'
-// import Amigos from './Amigos';
 
 const Tab = createBottomTabNavigator();
 
-function Teste() {
+function Inicio() {
     return(
         <Tab.Navigator
             initialRouteName='TelaInicial'
@@ -66,4 +63,4 @@ function Teste() {
     );
 }
 
-export default Teste;
+export default Inicio;

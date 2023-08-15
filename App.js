@@ -2,7 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 
 import Home from './src/screens/Home';
@@ -10,7 +10,7 @@ import Login from './src/screens/Profile_login';
 import Registro from './src/screens/Profile_register';
 import TelaInicial from './src/screens/TelaInicial';
 import Perfil from './src/screens/Perfil';
-import Teste from './src/screens/TabNavigation';
+import Inicio from './src/screens/TabNavigation';
 import Mapa from './src/screens/Mapa';
 import Rewards from './src/screens/Rewards';
 import Tarefas from './src/screens/Tarefas';
@@ -49,8 +49,8 @@ export default function App() {
         />
 
         <Stack.Screen
-          name='Teste'
-          component={Teste}
+          name='Inicio'
+          component={Inicio}
         />
 
           <Stack.Screen
