@@ -1,8 +1,8 @@
-import { StyleSheet, View, Text, ImageBackground, Image } from 'react-native';
+import { StyleSheet, View, Text, ImageBackground, Image, Pressable } from 'react-native';
 
 export default Rewards;
 
-function Rewards({}) {
+function Rewards({ navigation}) {
     return (
         <View style={styles.container}>
             <ImageBackground
@@ -10,12 +10,13 @@ function Rewards({}) {
                 source={require('./imagens/Fundo.png')}
                 resizeMode="cover"
             />
-
+            <Pressable>
             <Image
+                onPress={() => navigation.navigate('Bemol')}
                 style={styles.Imagem}
                 source={
                     require('./imagens/Bemol.png')}/>
-
+            </Pressable>
             <Image
                 style={styles.Imagem3}
                 source={

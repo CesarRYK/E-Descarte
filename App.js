@@ -15,6 +15,7 @@ import Mapa from './src/screens/Mapa';
 import Rewards from './src/screens/Rewards';
 import Tarefas from './src/screens/Tarefas';
 import Sugestão from './src/screens/Sugestões';
+import Bemol from './src/screens/Bemol';
 
 const Stack = createNativeStackNavigator();
 
@@ -73,6 +74,11 @@ export default function App() {
           component={Tarefas}
         />
         
+        <Stack.Screen
+          name='Bemol'
+          component={Bemol}
+        />
+
       </Stack.Navigator>
       <StatusBar />
     </NavigationContainer>
