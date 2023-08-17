@@ -9,7 +9,13 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#000000"
+      "backgroundColor": "#000000",
+      "version": "1.0.0",
+      "slug": "your-app-slug",
+      "ios": {
+        "bundleIdentifier": "com.E-descarte.E-descarte",
+        "buildNumber": "1.0.0"
+      }
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,11 +26,19 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000000"
-      }
+        "backgroundColor": "#000000",
+        "package": "com.E-descarte.E-descarte",
+        "versionCode": 1
+      },
+      "package": "com.hugolel.EDescarte"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0eb8b23c-5034-4477-808b-166e3d3d4632"
+      }
     }
   }
 }
