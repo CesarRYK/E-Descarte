@@ -2,7 +2,7 @@ import { StyleSheet, View, Text, ImageBackground, Image, Pressable } from 'react
 
 export default Rewards;
 
-function Rewards({ navigation}) {
+function Rewards({ navigation }) {
     return (
         <View style={styles.container}>
             <ImageBackground
@@ -10,27 +10,34 @@ function Rewards({ navigation}) {
                 source={require('./imagens/Fundo.png')}
                 resizeMode="cover"
             />
-            <Pressable>
+            <Pressable onPress={() => navigation.navigate('Bemol')}>
             <Image
-                onPress={() => navigation.navigate('Bemol')}
                 style={styles.Imagem}
                 source={
                     require('./imagens/Bemol.png')}/>
-            </Pressable>
+            </Pressable >
+
+            <Pressable onPress={() => navigation.navigate('Ifood')}>
+
             <Image
                 style={styles.Imagem3}
                 source={
                     require('./imagens/Ifood.png')}/>
+            </Pressable>
 
+            <Pressable onPress={() => navigation.navigate('InfoStore')}>
             <Image
                 style={styles.Imagem4}
                 source={
                     require('./imagens/InfoStore.jpg')}/>
+            </Pressable>
 
+            <Pressable onPress={() => navigation.navigate('Uber')}>
             <Image
                 style={styles.Imagem5}
                 source={
                     require('./imagens/Uber.jpg')}/>
+            </Pressable>
 
             <Text style={styles.Texto}>
                 Com os seus créditos acumulados usando o aplicativo, você pode troca-lós em qualquer loja de parceria nossa.

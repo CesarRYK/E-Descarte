@@ -16,6 +16,9 @@ import Rewards from './src/screens/Rewards';
 import Tarefas from './src/screens/Tarefas';
 import Sugestão from './src/screens/Sugestões';
 import Bemol from './src/screens/Bemol';
+import Ifood from './src/screens/Ifood';
+import InfoStore from './src/screens/InfoStore';
+import Uber from './src/screens/Uber';
 
 const Stack = createNativeStackNavigator();
 
@@ -77,6 +80,21 @@ export default function App() {
         <Stack.Screen
           name='Bemol'
           component={Bemol}
+        />
+
+        <Stack.Screen
+          name='Ifood'
+          component={Ifood}
+        />
+
+        <Stack.Screen
+          name='InfoStore'
+          component={InfoStore}
+        />
+
+        <Stack.Screen
+          name='Uber'
+          component={Uber}
         />
 
       </Stack.Navigator>
