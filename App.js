@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import { StyleSheet } from 'react-native';
 
 
@@ -30,13 +31,14 @@ export default function App() {
         <Stack.Screen
           name='Bem-vindo'
           component={Home}
-          
         />
+
         <Stack.Screen
+        
           name='Login'
           component={Login}
-
         />
+        
         <Stack.Screen
           name='Registro'
           component={Registro}

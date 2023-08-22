@@ -14,8 +14,8 @@ function Inicio() {
         <Tab.Navigator
             initialRouteName='TelaInicial'
             barStyle={{ backgroundColor: '#fff' }}  
-            inactiveColor='#228b22'  
-        >
+            inactiveColor='#228b22'
+            >  
             <Tab.Screen
                 name='Início'
                 component={TelaInicial}
