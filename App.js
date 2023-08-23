@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator, createNativeStackNavigator, CardStyleInterpolators } from '@react-navigation/native-stack';
 
 import { StyleSheet } from 'react-native';
 
@@ -49,16 +49,20 @@ export default function App() {
           component={TelaInicial}
         />
 
+
+       
         <Stack.Screen
           name='Perfil'
           component={Perfil}
         />
+        
 
+        
         <Stack.Screen
           name='Inicio'
           component={Inicio}
         />
-
+     
           <Stack.Screen
           name='Mapa'
           component={Mapa}

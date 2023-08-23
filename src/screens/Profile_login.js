@@ -13,7 +13,7 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
                 source={require('./imagens/e-descarte.png')}
                 
             />
-            <Text style={styles.cadastro}>
+            <Text style={styles.login}>
                 Faça seu Login
             </Text>
 
@@ -64,14 +64,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         left: 142,
     },
-    cadastro:{
+    login:{
         color: '#FFFFFF',
         padding: 8,
         top:-300,
         width: 370,
         left: 120,
         fontSize: 20,
-        
+        fontWeight: 'bold',
         
     },
     stretch: {
