@@ -1,12 +1,9 @@
-import {View, Text, StyleSheet, ImageBackground, Pressable} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground} from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
-import { FontAwesome } from '@expo/vector-icons';
 
+export default DadosPessoais;
 
-export default Perfil;
-
-function Perfil({ navigation }) {
+function DadosPessoais() {
     return (
         <View style={styles.container}>
                 <ImageBackground
@@ -21,41 +18,15 @@ function Perfil({ navigation }) {
             <Text style={styles.Usuário}>Olá, Luiz</Text>
             <Text style={styles.ExplorarPerfil}>Explore seu perfil</Text> 
             <Text style={styles.Nivel}>Nível</Text>
-            <Text style={styles.EdPoints}>EdPoints</Text>
 
-            <Pressable
-            onPress={() => navigation.navigate('DadosPessoais')}>
-            <Text style={styles.DadoPessoais}>Dados pessoais</Text>
-            </Pressable>
-
-            <Text style={styles.DesempenhoUsuario}>Desempenho do Usuário</Text>  
-            <Text style={styles.Estatisticas}>+ Estatisticas</Text> 
             
             <EvilIcons style={styles.Icone1}
                 name='user'
                 color={'#fff'}
             />  
 
-            <Ionicons style={styles.Icone2}
-                name='rocket-outline'
-                color={'#fff'}
-            /> 
 
-
-            <Pressable
-            onPress={() => navigation.navigate('DadosPessoais')}>
-            <FontAwesome style={styles.Icone3}
-                name='user-circle-o'
-                color={'#fff'}
-            />
-            </Pressable>
-
-
-            <Ionicons style={styles.Icone4}
-                name='stats-chart-outline'
-                color={'#fff'}
             
-            />
 
         </View>
         

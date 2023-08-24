@@ -1,12 +1,8 @@
 import React from "react";
 
 import { EvilIcons } from "@expo/vector-icons";
-import { Foundation } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
 
-
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import {View, Text, StyleSheet, ImageBackground, TouchableOpacity, Pressable, Image} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground, Pressable, Image} from 'react-native';
 
 
 export default function TelaInicial({ navigation }) {
@@ -22,6 +18,16 @@ export default function TelaInicial({ navigation }) {
             <Text style={styles.Text3}>PÁGINA INICIAL</Text>
             <Text style={styles.Text1}>Olá Luiz,</Text>
             <Text style={styles.Text2}>Vamos começar!</Text>
+
+
+
+            <Text style={styles.TarefasTexto}>Tarefas</Text>
+            <Text style={styles.VerDescartesTexto}>Ver Descartes</Text>
+            <Text style={styles.EdPointsTexto}>EdPoints</Text>
+            <Text style={styles.SugestoesTexto}>Sugestões</Text>
+
+
+
 
             <EvilIcons style={styles.Usuario}
                 name='user'
@@ -45,7 +51,7 @@ export default function TelaInicial({ navigation }) {
                 <Pressable onPress={() => navigation.navigate('Tarefas')}
                >
                 <Image
-                style={styles.localizacao}
+                style={styles.Tarefas}
                 source={require('./imagens/tarefa.png')}
                 />
                 </Pressable>
@@ -53,7 +59,7 @@ export default function TelaInicial({ navigation }) {
                 <Pressable onPress={() => navigation.navigate('Rewards')}
                >
                 <Image
-                style={styles.localizacao}
+                style={styles.EdPoints}
                 source={require('./imagens/pontuacao.png')}
                 />
                 </Pressable>
@@ -61,7 +67,7 @@ export default function TelaInicial({ navigation }) {
                 <Pressable onPress={() => navigation.navigate('Sugestão')}
                >
                 <Image
-                style={styles.localizacao}
+                style={styles.Sugestões}
                 source={require('./imagens/melhoria.png')}
                 />
                 </Pressable>
@@ -98,14 +104,14 @@ const styles = StyleSheet.create({
     textColor: {
         color: '#f0fff0',
         fontSize: 28,
-        top: 15,
+        top: -10,
         left: 142,
        
     },
 
     Text1: {
         color: '#fff',
-        top: 80,
+        top: 60,
         left: 170,
         fontSize: 20,
         textAlign: 'center',
@@ -114,78 +120,58 @@ const styles = StyleSheet.create({
 
     Text2: {
         color: '#fff',
-        top: 80,
+        top: 60,
         left: 170,
         fontSize: 20,
     },
 
     Text3: {
         color: '#7fffd4',
-        top: 9,
+        top: -10,
         left: 160,
     },
 
+    TarefasTexto:{
+        top: 230,
+        left: 70,
+        color: '#ffffff',
+        fontWeight: 'bold',
+        fontSize: 17,
+    },
+    VerDescartesTexto:{
+        top: 210,
+        left: 240,
+        fontWeight: 'bold',
+        fontSize: 15,
+        color: '#ffffff',
+    },
+
+    EdPointsTexto:{
+        top: 330,
+        left: 70,
+        fontWeight: 'bold',
+        fontSize: 15,
+        color: '#ffffff',
+    },
+
+    SugestoesTexto:{
+        top: 310,
+        left: 255,
+        color: '#ffffff',
+        fontWeight: 'bold',
+        fontSize: 15,
+        borderColor: '#006400',
+        borderRadius: 1,
+        shadowOpacity: 100,
+        shadowRadius: 10,
+    },
+
     Usuario: {
-        top: -20,
+        top: -120,
         left: 40,
     },
 
     Descartes: {
-        color: '#5f9ea0',
-        borderWidth: 0,
-        borderColor: '#000000',
-        backgroundColor: '#fff',
-        padding: 34,
-        borderRadius: 40,
-        marginBottom: 20,
-        left: 40,
-        top: 45,
-        fontSize: 18,
-        width: 161,
-    },
-
-    Tarefas: {
-        color: '#5f9ea0',
-        borderWidth: 0,
-        borderColor: '#000000',
-        backgroundColor: '#fff',
-        padding: 34,
-        borderRadius: 40,
-        marginBottom: 20,
-        left: 48,
-        top: 50,
-        fontSize: 18,
-        width: 150,
-        
-    },
-
-    EdPoints: {
-        color: '#5f9ea0',
-        borderWidth: 0,
-        borderColor: '#000000',
-        backgroundColor: '#fff',
-        padding: 34,
-        borderRadius: 40,
-        marginBottom: 20,
-        left: 220,
-        top: -179,
-        fontSize: 18,
-    },
-
-    Sugestões: {
-        color: '#5f9ea0',
-        borderWidth: 0,
-        borderColor: '#000000',
-        backgroundColor: '#fff',
-        padding: 34,
-        borderRadius: 40,
-        marginBottom: 20,
-        left: 215,
-        top: -175,
-        
-    },
-
-    localizacao: {
         width: 80,
         height: 80,
         resizeMode: 'cover',
@@ -196,6 +182,64 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
+    },
+
+    Tarefas: {
+        width: 80,
+        height: 80,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+        borderWidth: 0,
+        borderColor: '#000000',
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 40,
+        top: -125,
+        left: 60,
+
+    },
+
+    EdPoints: {
+        width: 80,
+        height: 80,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+        borderWidth: 0,
+        borderColor: '#000000',
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 40,
+        top: -70,
+        left: 60,
+
+    },
+
+    Sugestões: {
+        width: 80,
+        height: 80,
+        resizeMode: 'contain',
+        justifyContent: 'center',
+        borderWidth: 0,
+        borderColor: '#000000',
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 40,
+        top: -145,
+        left: 250,
+    },
+
+    localizacao: {
+        width: 80,
+        height: 80,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+        borderWidth: 0,
+        borderColor: '#000000',
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 40,
+        top: -45,
+        left: 250,
     }
 
 

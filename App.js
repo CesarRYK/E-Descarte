@@ -20,6 +20,7 @@ import Bemol from './src/screens/Bemol';
 import Ifood from './src/screens/Ifood';
 import InfoStore from './src/screens/InfoStore';
 import Uber from './src/screens/Uber';
+import DadosPessoais from './src/screens/DadosPessoais';
 
 const Stack = createNativeStackNavigator();
 
@@ -101,6 +102,11 @@ export default function App() {
         <Stack.Screen
           name='Uber'
           component={Uber}
+        />
+
+        <Stack.Screen
+          name='DadosPessoais'
+          component={DadosPessoais}
         />
 
       </Stack.Navigator>
