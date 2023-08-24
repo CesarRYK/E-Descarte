@@ -6,7 +6,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import {View, Text, StyleSheet, ImageBackground, TouchableOpacity, Pressable} from 'react-native';
+import {View, Text, StyleSheet, ImageBackground, TouchableOpacity, Pressable, Image} from 'react-native';
 
 
 export default function TelaInicial({ navigation }) {
@@ -31,62 +31,47 @@ export default function TelaInicial({ navigation }) {
                 />
 
 
-            <TouchableOpacity>
-                
-                <Pressable 
-                onPress={() => navigation.navigate('Mapa')}>
-            <Text style={styles.Descartes}>Descarte
-            <MaterialCommunityIcons
-                name='trash-can'
-                size={20}
-                color='#228b22'
-                
-                />
-            </Text>
-                </Pressable>
-            </TouchableOpacity>
+            
 
-            <TouchableOpacity>
-                
-            <Pressable 
-                onPress={() => navigation.navigate('Tarefas')}>
-            <Text style={styles.Tarefas}>Tarefas
-                <Foundation
-                    name='clipboard-notes'
-                    size={20}      
-                    color='#228b22'                
+               
+               <Pressable onPress={() => navigation.navigate('Mapa')}
+               >
+                <Image
+                style={styles.localizacao}
+                source={require('./imagens/localizacao.png')}
                 />
-            </Text>
                 </Pressable>
-            </TouchableOpacity>
+
+                <Pressable onPress={() => navigation.navigate('Tarefas')}
+               >
+                <Image
+                style={styles.localizacao}
+                source={require('./imagens/tarefa.png')}
+                />
+                </Pressable>
+
+                <Pressable onPress={() => navigation.navigate('Rewards')}
+               >
+                <Image
+                style={styles.localizacao}
+                source={require('./imagens/pontuacao.png')}
+                />
+                </Pressable>
+
+                <Pressable onPress={() => navigation.navigate('Sugestão')}
+               >
+                <Image
+                style={styles.localizacao}
+                source={require('./imagens/melhoria.png')}
+                />
+                </Pressable>
+
+
+
+
+
 
             
-            <TouchableOpacity>
-            <Pressable 
-                onPress={() => navigation.navigate('Rewards')}>
-            <Text style={styles.EdPoints}>EdPoints
-            <MaterialCommunityIcons
-                    name='medal-outline'
-                    size={20}
-                    color='#228b22'
-                />
-            </Text>
-                </Pressable>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <Pressable 
-                onPress={() => navigation.navigate('Sugestão')}>
-            <Text style={styles.Sugestões}>Sugestões
-            <Ionicons
-                 name='megaphone-outline'
-                 size={20}
-                 color='#228b22'
-                />
-
-            </Text>
-            </Pressable>
-            </TouchableOpacity>
 
 
         </View>
@@ -197,7 +182,21 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         left: 215,
         top: -175,
-        fontSize: 18,
+        
     },
+
+    localizacao: {
+        width: 80,
+        height: 80,
+        resizeMode: 'cover',
+        justifyContent: 'center',
+        color: '#5f9ea0',
+        borderWidth: 0,
+        borderColor: '#000000',
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 40,
+    }
+
 
 });

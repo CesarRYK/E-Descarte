@@ -3,6 +3,10 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
  export default function Login({ navigation }) {
      return(
         <View style={styles.container} >
+        
+       
+
+
             <ImageBackground
                 style={styles.stretch}
                 source={require('./imagens/Fundo.png')}
@@ -16,9 +20,8 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
             <Text style={styles.login}>
                 Faça seu Login
             </Text>
-
-        
-                  
+            
+            
             <TouchableOpacity>
                 
             <Text style={styles.textColor}>Insira seu email ou número de telefone...
@@ -47,6 +50,32 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground} fr
 }
 
 const styles = StyleSheet.create({
+    teste1:{
+        top: -260,
+        left: 120,
+        color: '#000000',
+        borderWidth: 1,
+        borderRadius: 40,
+        backgroundColor: '#f8f8ff',
+        borderColor: '#f5fffa',
+        padding: 2,
+        width: 120,
+        textAlign: 'center',
+    },
+
+    teste2:{
+        top: -260,
+        left: 220,
+        color: '#008000',
+        borderWidth: 1,
+        borderRadius: 40,
+        backgroundColor: '#f8f8ff',
+        borderColor: '#f5fffa',
+        padding: 2,
+        width: 120,
+        textAlign: 'center',
+    },
+    
     container: {
         width: 400,
         top: -1,
@@ -57,12 +86,12 @@ const styles = StyleSheet.create({
     },
     logo:{
         width: 100,
-        top: -190,
         flex: 1,
         height: 80,
         resizeMode: 'cover',
         justifyContent: 'center',
         left: 142,
+        top: -190,
     },
     login:{
         color: '#FFFFFF',
