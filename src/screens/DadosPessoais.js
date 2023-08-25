@@ -74,14 +74,6 @@ const styles = StyleSheet.create({
         top: -140,
     },
 
-    Estatisticas: {
-        color: '#fff',
-        alignItems: 'center',
-        top: -99,
-        left: 130,
-    },
-
-
     Nivel: {
         color: '#228b22',
         top: -180,
