@@ -17,9 +17,20 @@ function DadosPessoais() {
             <Text style={styles.Filtro}>PERFIL DO USUÁRIO</Text>
             <Text style={styles.Usuário}>Olá, Luiz</Text>
             <Text style={styles.ExplorarPerfil}>Explore seu perfil</Text> 
-            <Text style={styles.Nivel}>Nível</Text>
+    
 
+
+
+            <Text>Nome completo{'\n'}LUIZ GUSTAVO DE LIMA SILVA</Text>
+            <Text>Data de Nascimento{'\n'}09/05/2001</Text>
+            <Text>Cidade/Estado{'\n'}Manaus/Amazonas</Text>
+            <Text>Cadastro de Pessoa Física( CPF ){'\n'}759.174.021-87 </Text>
+            <Text>Número de Telefone{'\n'} (92) 99147-0298</Text>
+            <Text>Email do Usuário{'\n'}gustavoluizls@hotmail.com</Text>
             
+
+
+
             <EvilIcons style={styles.Icone1}
                 name='user'
                 color={'#fff'}
@@ -46,41 +57,13 @@ const styles = StyleSheet.create({
     Usuário: {
         color: '#fff',
         fontSize: 25,
-        top: -80,
+        top: -140,
     },
 
     Icone1: {
         color: '#fff',
         fontSize: 120,
-        top: -330,
-        left: 0,
-    },
-
-    Icone2: {
-        color: '#fff',
-        fontSize: 25,
-        top: -240,
-        left: 0,
-    },
-
-    Icone3: {
-        color: '#fff',
-        fontSize: 25,
-        top: -265,
-        left: -130,
-    },
-
-    Icone4: {
-        color: '#fff',
-        fontSize: 25,
-        top: -290,
-        left: 136,
-    },
-
-    Icone5: {
-        color: '#fff',
-        fontSize: 25,
-        top: 0,
+        top: -510,
         left: 0,
     },
 
@@ -88,20 +71,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 15,
         alignItems: 'center',
-        top: -85,
-    },
-
-    DadoPessoais: {
-        color: '#fff',
-        top: -61,
-        left: -135,
-
-    },
-
-   DesempenhoUsuario: {
-        color: '#fff',
-        top: -80,
-        alignItems: 'center',
+        top: -140,
     },
 
     Estatisticas: {
@@ -111,29 +81,6 @@ const styles = StyleSheet.create({
         left: 130,
     },
 
-    DescartesDia: {
-        color: '#5f9ea0',
-    },
-
-    MetaDescartes: {
-        color: '#5f9ea0',
-    },
-
-    ColetasDia: {
-        color: '#5f9ea0',
-    },
-
-    MetaColetas: {
-        color: '#5f9ea0',
-    },
-
-    TotalDescartes: {
-        color: '#5f9ea0',
-    },
-
-    TotalColetas: {
-        color: '#5f9ea0', 
-    },
 
     Nivel: {
         color: '#228b22',
