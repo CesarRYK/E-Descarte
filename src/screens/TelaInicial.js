@@ -22,7 +22,7 @@ export default function TelaInicial({ navigation }) {
 
 
             <Text style={styles.TarefasTexto}>Tarefas</Text>
-            <Text style={styles.VerDescartesTexto}>Ver Descartes</Text>
+            <Text style={styles.VerDescartesTexto}>Mapa de Descartes</Text>
             <Text style={styles.EdPointsTexto}>EdPoints</Text>
             <Text style={styles.SugestoesTexto}>Sugestões</Text>
 
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     },
     VerDescartesTexto:{
         top: 210,
-        left: 240,
+        left: 230,
         fontWeight: 'bold',
         fontSize: 15,
         color: '#ffffff',
