@@ -21,12 +21,18 @@ function DadosPessoais() {
 
 
 
-            <Text>Nome completo{'\n'}LUIZ GUSTAVO DE LIMA SILVA</Text>
-            <Text>Data de Nascimento{'\n'}09/05/2001</Text>
-            <Text>Cidade/Estado{'\n'}Manaus/Amazonas</Text>
-            <Text>Cadastro de Pessoa Física( CPF ){'\n'}759.174.021-87 </Text>
-            <Text>Número de Telefone{'\n'} (92) 99147-0298</Text>
-            <Text>Email do Usuário{'\n'}gustavoluizls@hotmail.com</Text>
+            <Text style={styles.nome}>Nome completo</Text>
+            <Text style={styles.nome2}>LUIZ GUSTAVO DE LIMA SILVA</Text>
+            <Text style={styles.data}>Data de Nascimento</Text>
+            <Text style={styles.data2}>09/05/2001</Text>
+            <Text style={styles.cidade}>Cidade/Estado</Text>
+            <Text style={styles.cidade2}>Manaus/Amazonas</Text>
+            <Text style={styles.cpf}>Cadastro de Pessoa Física( CPF )</Text>
+            <Text style={styles.cpf2}>759.174.021-87</Text>
+            <Text style={styles.num}>Número de Telefone</Text>
+            <Text style={styles.num2}> (92) 99147-0298</Text>
+            <Text style={styles.email}>Email do Usuário</Text>
+            <Text style={styles.email2}>gustavoluizls@hotmail.com</Text>
             
 
 
@@ -56,8 +62,8 @@ const styles = StyleSheet.create({
 
     Usuário: {
         color: '#fff',
-        fontSize: 25,
-        top: -140,
+        fontSize: 20,
+        top: -134,
     },
 
     Icone1: {
@@ -105,4 +111,95 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         justifyContent: 'center',
     },
+
+    nome:{
+        color: '#7FFFD4',
+        fontSize: 14,
+        right:125,
+        top: -90,
+    },
+
+    nome2:{
+        color: '#FFFFFF',
+        fontSize: 14,
+        right:78,
+        top: -90,
+
+    },
+
+    data:{
+        color: '#7FFFD4',
+        fontSize: 14,
+        right:110,
+        top: -70,
+    },
+
+    data2:{
+        color: '#FFFFFF',
+        fontSize: 14,
+        right:136,
+        top: -70,
+
+    },
+
+    cidade:{
+        color: '#7FFFD4',
+        fontSize: 14,
+        right:129,
+        top: -50,
+    },
+
+    cidade2:{
+        color: '#FFFFFF',
+        fontSize: 14,
+        right:112,
+        top: -50,
+
+    },
+
+    cpf:{
+        color: '#7FFFD4',
+        fontSize: 14,
+        right:69,
+        top: -30,
+    },
+
+    cpf2:{
+        color: '#FFFFFF',
+        fontSize: 14,
+        right:124,
+        top: -30,
+
+    },
+
+    num:{
+        color: '#7FFFD4',
+        fontSize: 14,
+        right:112,
+        top: -10,
+    },
+
+    num2:{
+        color: '#FFFFFF',
+        fontSize: 14,
+        right:126,
+        top: -10,
+
+    },
+
+    email:{
+        color: '#7FFFD4',
+        fontSize: 14,
+        right:124,
+        top: 10,
+    },
+
+    email2:{
+        color: '#FFFFFF',
+        fontSize: 14,
+        right:90,
+        top: 10,
+
+    },
+   
 });
