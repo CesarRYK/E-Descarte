@@ -20,6 +20,11 @@ export default function TelaInicial({ navigation }) {
             <Text style={styles.Text2}>Vamos começar!</Text>
 
 
+
+            <Text Pressable onPress={() => navigation.navigate('TelaEducacional')}>
+                Teste
+            </Text>
+
             <Pressable onPress={() => navigation.navigate('Tarefas')}>
             <Text style={styles.TarefasTexto}>Tarefas</Text>
             </Pressable>

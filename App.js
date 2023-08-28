@@ -21,6 +21,7 @@ import Ifood from './src/screens/Ifood';
 import InfoStore from './src/screens/InfoStore';
 import Uber from './src/screens/Uber';
 import DadosPessoais from './src/screens/DadosPessoais';
+import TelaEducacional from './src/screens/TelaEducacional';
 
 const Stack = createNativeStackNavigator();
 
@@ -107,6 +108,11 @@ export default function App() {
         <Stack.Screen
           name='DadosPessoais'
           component={DadosPessoais}
+        />
+
+        <Stack.Screen
+          name='TelaEducacional'
+          component={TelaEducacional}
         />
 
       </Stack.Navigator>
