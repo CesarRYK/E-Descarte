@@ -1,3 +1,4 @@
+
 import {View, Text, StyleSheet, ImageBackground} from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 
@@ -5,13 +6,14 @@ export default DadosPessoais;
 
 function DadosPessoais() {
     return (
+        
         <View style={styles.container}>
                 <ImageBackground
                 style={styles.stretch}
                 source={require('./imagens/Fundo.png')}
                 resizeMode="cover"
             />
-
+        
 
             <Text style={styles.EDescarte}>E-DESCARTE</Text>
             <Text style={styles.Filtro}>PERFIL DO USUÁRIO</Text>
@@ -56,14 +58,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#0ce8c0',
-
-        
     },
 
     Usuário: {
         color: '#fff',
         fontSize: 20,
         top: -134,
+        fontWeight: 'bold',
     },
 
     Icone1: {
@@ -99,9 +100,10 @@ const styles = StyleSheet.create({
     },
 
     Filtro: {
-        color: '#228b22',
+        color: '#7FFFD4',
         fontSize: 13,
         top: -245,
+        
     },
 
     stretch: {

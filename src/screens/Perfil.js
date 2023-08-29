@@ -165,13 +165,13 @@ const styles = StyleSheet.create({
     },
 
     Nivel: {
-        color: '#228b22',
+        color: '#7FFFD4',
         top: -180,
         left: -130,
     },
 
     EdPoints: {
-        color: '#228b22',
+        color: '#7FFFD4',
         top: -196,
         left: 130,
     },
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
     },
 
     Filtro: {
-        color: '#228b22',
+        color: '#7FFFD4',
         fontSize: 13,
         top: -245,
     },
