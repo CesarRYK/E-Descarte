@@ -1,5 +1,5 @@
 import React from "react";
-import {ImageBackground,  Text, StyleSheet, ScrollView,  SafeAreaView,} from 'react-native';
+import {ImageBackground, Text, StyleSheet, ScrollView,  SafeAreaView,} from 'react-native';
 
 export default function TelaEducacional() {
     return(
@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
     },
 
     scrollView: {
-
-        marginHorizontal: 90,
+        marginHorizontal: 70,
       },
 });
