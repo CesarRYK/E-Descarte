@@ -31,22 +31,41 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='Bem-vindo'
           component={Home}
         />
 
         <Stack.Screen
-        
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='Login'
           component={Login}
         />
         
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}
           name='Registro'
           component={Registro}
         />
 
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}
           name='TelaInicial'
           component={TelaInicial}
         />
@@ -54,6 +73,11 @@ export default function App() {
 
        
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='Perfil'
           component={Perfil}
         />
@@ -61,56 +85,111 @@ export default function App() {
 
         
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='Inicio'
           component={Inicio}
         />
      
-          <Stack.Screen
+        <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='Mapa'
           component={Mapa}
         />
 
       <Stack.Screen
+        options={{
+          title: '',
+          headerTransparent: true,
+          headerShown: false,
+        }}
           name='Rewards'
           component={Rewards}
         />
 
       <Stack.Screen
+        options={{
+          title: '',
+          headerTransparent: true,
+          headerShown: false,
+        }}
           name='Sugestão'
           component={Sugestão}
         />
 
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='Tarefas'
           component={Tarefas}
         />
         
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='Bemol'
           component={Bemol}
         />
 
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}
           name='Ifood'
           component={Ifood}
         />
 
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}
           name='InfoStore'
           component={InfoStore}
         />
 
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='Uber'
           component={Uber}
         />
 
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='DadosPessoais'
           component={DadosPessoais}
         />
 
         <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
           name='TelaEducacional'
           component={TelaEducacional}
         />
