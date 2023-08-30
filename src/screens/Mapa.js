@@ -48,7 +48,8 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'center',
     justifyContent: 'center',
-    top: 19,
+    height: 880,
+    width: 400,
   },
   text: {
     color: '#5f9ea0',
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 20,
     
-    top:-550,
+    top: -620,
     width: 350,
     left: 15,
   },

@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'baseline',
+        alignItems: 'stretch',
         backgroundColor: '#228b22',
 
         
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     stretch: {
         width: 490,
         flex: 1,
-        height: 700,
+        height: 715,
         resizeMode: 'cover',
         justifyContent: 'center',
     },
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     Text1: {
         color: '#fff',
         top: 60,
-        left: 170,
+        left: 10,
         fontSize: 20,
         textAlign: 'center',
         fontWeight: 'bold',
