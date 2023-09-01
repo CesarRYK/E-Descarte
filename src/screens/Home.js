@@ -13,12 +13,12 @@ function Home({ navigation }) {
 
             <Pressable style={styles.buttonContainer}
             onPress={() => navigation.navigate('Login') }>
-                <Text style={styles.textColor}>ENTRAR</Text>
+                <Text style={styles.textColor}>Entrar</Text>
             </Pressable>
             
-            <Pressable style={styles.buttonContainer} 
+            <Pressable style={styles.buttonContainer2} 
             onPress={() => navigation.navigate('Registro')}>
-                <Text style={styles.textColor}>REGISTRAR</Text>
+                <Text style={styles.textColor2}>Criar uma conta</Text>
             </Pressable>
         </View>
     );
@@ -41,21 +41,48 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     buttonContainer: {
-        borderWidth: 3,
+        borderWidth: 4,
         borderColor: '#f5fffa',
         backgroundGradient: "vertical",
         backgroundGradientTop: "#333333",
         backgroundGradientBottom: "#666666",
-        padding: 15,
+        padding: 1,
         borderRadius: 40,
         marginBottom: 20,
-        top:-100,
+        top: -140,
+        width: 290,
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
+    buttonContainer2: {
+        borderWidth: 4,
+        borderColor: '#f5fffa',
+        backgroundGradient: "vertical",
+        backgroundGradientTop: "#333333",
+        backgroundGradientBottom: "#666666",
+        padding: 1,
+        borderRadius: 40,
+        marginBottom: 20,
+        top: -140,
+        width: 290,
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
 
     },
 
     textColor: {
         color: '#f5fffa',
-        
+        fontSize: 22,
+        fontWeight: 'bold',
+    },
+
+    textColor2: {
+        color: '#f5fffa',
+        fontSize: 22,
+        fontWeight: 'bold',
 
     }
 
