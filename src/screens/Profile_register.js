@@ -1,5 +1,8 @@
 import {View, Text, StyleSheet, Pressable, ImageBackground, Image} from 'react-native';
 import { Entypo } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
+import { EvilIcons } from "@expo/vector-icons";
 
 export default Registro;
 
@@ -22,7 +25,16 @@ function Registro({ navigation }) {
 
 
 
-            <Text style={styles.textColor}>Insira seu nome completo...</Text>
+            <Text style={styles.textColor}>
+            <EvilIcons
+            name='user'
+            size={19}
+            color='#000000'
+            
+            >
+                </EvilIcons>
+                Insira seu nome completo...
+            </Text>
 
 
 
@@ -50,7 +62,7 @@ function Registro({ navigation }) {
             <Text style={styles.continuar}>Ou continuar com</Text>
 
             <Text style={styles.facebook}>Continuar com Facebook  {'\r'}
-                    <Entypo
+                <Entypo
                     name='facebook'
                     size={20}
                     color='#ffffff'
@@ -82,7 +94,7 @@ const styles = StyleSheet.create({
     stretch: {
         width: 490,
         flex: 1,
-        height: 780,
+        height: 830,
         resizeMode: 'cover',
         justifyContent: 'center',
     },
@@ -116,6 +128,10 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         top: -80,
         width: 370,
+        height: -35,
+        textAlign: 'left',
+        alignContent: 'center',
+        fontSize: 15,
         
     },
 

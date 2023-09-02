@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     stretch: {
         width: 490,
         flex: 1,
-        height: 715,
+        height: 780,
         resizeMode: 'cover',
         justifyContent: 'center',
     },

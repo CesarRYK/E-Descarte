@@ -109,8 +109,9 @@ const styles = StyleSheet.create({
         top: -1,
         flex: 1,
         height: 800,
-        resizeMode: 'cover',
+        resizeMode: 'contain',
         justifyContent: 'center',
+        display: 'flex',
     },
     logo:{
         width: 130,
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
         width: 400,
         top: -115,
         flex: 1,
-        height: 880,
+        height: 945,
         resizeMode: 'cover',
         justifyContent: 'center',
     },
@@ -215,7 +216,6 @@ const styles = StyleSheet.create({
     imagemGoogle: {
        width: 18,
        height: 18,
-     
     },
 
     },
