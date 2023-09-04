@@ -1,4 +1,5 @@
 import { StyleSheet, View, Text, ImageBackground, Image, Pressable } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default Rewards;
 

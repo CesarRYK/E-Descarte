@@ -1,24 +1,24 @@
-import {View, Text, StyleSheet, TouchableOpacity, Pressable, ImageBackground, Image} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Pressable, Image} from 'react-native';
 import { Entypo } from "@expo/vector-icons";
-
+import { LinearGradient } from 'expo-linear-gradient';
 
  export default function Login({ navigation }) {
      return(
         <View style={styles.container} >
         
-       
+        <LinearGradient style={{
+                height: 950, 
+                width: 600, 
+                borderRadius: 5}}
+	            colors={['#009582','#009452']}>
 
 
-            <ImageBackground
-                style={styles.stretch}
-                source={require('./imagens/Fundo.png')}
-                resizeMode="cover"        
-            />
-            <ImageBackground
+            <Image
                 style={styles.logo}
                 source={require('./imagens/e-descarte.png')}
                 
             />
+                    </LinearGradient>
             <Text style={styles.login}>
                 Faça seu Login
             </Text>
@@ -105,41 +105,27 @@ const styles = StyleSheet.create({
     },
     
     container: {
-        width: 400,
-        top: -1,
-        flex: 1,
-        height: 800,
-        resizeMode: 'contain',
-        justifyContent: 'center',
-        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
     },
     logo:{
-        width: 130,
-        flex: 1,
-        height: 140,
-        resizeMode: 'cover',
+        top: 90,
+        height: 180,
+        width: 165,
         justifyContent: 'center',
-        left: 142,
-        top: -140,
+        left: 220,
     },
     login:{
         color: '#FFFFFF',
         padding: 8,
-        top: -190,
+        top: -690,
         width: 370,
-        left: 132,
+        left: 120,
         fontSize: 20,
         fontWeight: 'bold',
         
     },
-    stretch: {
-        width: 400,
-        top: -115,
-        flex: 1,
-        height: 945,
-        resizeMode: 'cover',
-        justifyContent: 'center',
-    },
+   
     textColor: {
         color: '#5f9ea0',
         borderWidth: 3,
@@ -148,15 +134,15 @@ const styles = StyleSheet.create({
         padding: 8,
         borderRadius:10,
         marginBottom: 20,
-        top: -180,
+        top: -680,
         width: 370,
-        left:14,
+        left: 2,
     },
 
     Avançar: {
         color: '#5f9ea0',
-        top: -60,
-        left: 50,
+        top: -490,
+        left: 45,
         borderWidth: 3,
         borderRadius: 40,
         marginBottom: 20,
@@ -170,7 +156,7 @@ const styles = StyleSheet.create({
 
     Senha: {
         color: '#fff',
-        top: -280,
+        top: -790,
         left: 110,
         textAlign: 'center',
         textDecorationLine: 'underline',
@@ -179,7 +165,7 @@ const styles = StyleSheet.create({
     continuar:{
         color: '#FFFFFF',
         padding: 8,
-        top: -85,
+        top: -510,
         width: 370,
         left: 110,
         fontSize: 20,
@@ -187,8 +173,8 @@ const styles = StyleSheet.create({
 
     facebook: {
         color: '#ffffff',
-        top: -60,
-        left: 50,
+        top: -520,
+        left: 10,
         borderRadius: 40,
         marginBottom: 20,
         backgroundColor: '#00008b',
@@ -196,13 +182,14 @@ const styles = StyleSheet.create({
         padding: 8,
         width: 300,
         textAlign: 'center',
+        justifyContent: 'center',
         
     },
 
     google: {
         color: '#000000',
-        top: -60,
-        left: 50,
+        top: -530,
+        left: 10,
         borderRadius: 40,
         marginBottom: 20,
         backgroundColor: '#ffffff',

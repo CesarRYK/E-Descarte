@@ -1,4 +1,5 @@
 import React from "react";
+import { LinearGradient } from 'expo-linear-gradient';
 
 import { EvilIcons } from "@expo/vector-icons";
 

@@ -2,7 +2,7 @@ import {View, Text, StyleSheet, ImageBackground, Pressable} from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
-
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default Perfil;
 

@@ -3,6 +3,7 @@ import { Entypo } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { EvilIcons } from "@expo/vector-icons";
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default Registro;
 

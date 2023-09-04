@@ -1,6 +1,7 @@
 import { StyleSheet, View, Pressable, Text, ImageBackground, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { SimpleLineIcons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default Sugestão;
 

@@ -1,5 +1,6 @@
 import { StyleSheet, View, Pressable, Text, ImageBackground } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default Tarefas;
 

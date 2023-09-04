@@ -1,4 +1,4 @@
-import { StyleSheet, View, Pressable, Text} from 'react-native';
+import { StyleSheet, View, Pressable, Text, Image} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 
@@ -7,13 +7,21 @@ export default Home;
 function Home({ navigation }) {
     return (
         <View style={styles.container}>
+            
             <LinearGradient style={{
                 height: 970, 
-                width: 395, 
+                width: 970, 
                 borderRadius: 5}}
 	            colors={['#009582','#009452']}>
-                    
-            </LinearGradient>
+
+
+                <Image
+                style={styles.imagem}
+                source={require('./imagens/LogoOficial.png')}
+                resizeMode='stretch'
+                />
+
+                </LinearGradient>
 
             <Pressable style={styles.buttonContainer}
             onPress={() => navigation.navigate('Login') }>
@@ -30,13 +38,8 @@ function Home({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
-        resizeMode: 'contain',
-        justifyContent: 'center',
-        display: 'flex',
-        
+        justifyContent: 'space-between',
     },
     stretch: {
         width: 420,
@@ -47,6 +50,13 @@ const styles = StyleSheet.create({
         
     
     },
+
+    imagem: {
+        justifyContent: 'center',
+        top: 200,
+        left: 310,
+    },
+
     buttonContainer: {
         borderWidth: 4,
         borderColor: '#f5fffa',
