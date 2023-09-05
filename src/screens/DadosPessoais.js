@@ -1,6 +1,7 @@
 
 import {View, Text, StyleSheet, ImageBackground} from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default DadosPessoais;
 
@@ -8,12 +9,13 @@ function DadosPessoais() {
     return (
         
         <View style={styles.container}>
-                <ImageBackground
-                style={styles.stretch}
-                source={require('./imagens/Fundo.png')}
-                resizeMode="cover"
-            />
-        
+            <LinearGradient style={{
+                height: 950, 
+                width: 600, 
+                borderRadius: 5}}
+	            colors={['#009582','#009452']}>
+
+                    </LinearGradient>        
 
             <Text style={styles.EDescarte}>E-DESCARTE</Text>
             <Text style={styles.Filtro}>PERFIL DO USUÁRIO</Text>
@@ -54,23 +56,21 @@ function DadosPessoais() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#0ce8c0',
+        justifyContent: 'space-between',
     },
 
     Usuário: {
         color: '#fff',
-        fontSize: 20,
-        top: -134,
+        fontSize: 25,
+        top: -680,
         fontWeight: 'bold',
     },
 
     Icone1: {
         color: '#fff',
         fontSize: 120,
-        top: -510,
+        top: -1060,
         left: 0,
     },
 
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 15,
         alignItems: 'center',
-        top: -140,
+        top: -685,
     },
 
     Nivel: {
@@ -95,14 +95,14 @@ const styles = StyleSheet.create({
 
     EDescarte: {
         color: '#fff',
-        top: -250,
+        top: -850,
         fontSize: 17,
     },
 
     Filtro: {
         color: '#7FFFD4',
         fontSize: 13,
-        top: -245,
+        top: -850,
         
     },
 
@@ -118,14 +118,14 @@ const styles = StyleSheet.create({
         color: '#7FFFD4',
         fontSize: 14,
         right:125,
-        top: -90,
+        top: -660,
     },
 
     nome2:{
         color: '#FFFFFF',
         fontSize: 14,
         right:78,
-        top: -90,
+        top: -660,
 
     },
 
@@ -133,14 +133,14 @@ const styles = StyleSheet.create({
         color: '#7FFFD4',
         fontSize: 14,
         right:110,
-        top: -70,
+        top: -650,
     },
 
     data2:{
         color: '#FFFFFF',
         fontSize: 14,
         right:136,
-        top: -70,
+        top: -650,
 
     },
 
@@ -148,14 +148,14 @@ const styles = StyleSheet.create({
         color: '#7FFFD4',
         fontSize: 14,
         right:129,
-        top: -50,
+        top: -640,
     },
 
     cidade2:{
         color: '#FFFFFF',
         fontSize: 14,
         right:112,
-        top: -50,
+        top: -640,
 
     },
 
@@ -163,14 +163,14 @@ const styles = StyleSheet.create({
         color: '#7FFFD4',
         fontSize: 14,
         right:69,
-        top: -30,
+        top: -630,
     },
 
     cpf2:{
         color: '#FFFFFF',
         fontSize: 14,
         right:124,
-        top: -30,
+        top: -630,
 
     },
 
@@ -178,14 +178,14 @@ const styles = StyleSheet.create({
         color: '#7FFFD4',
         fontSize: 14,
         right:112,
-        top: -10,
+        top: -620,
     },
 
     num2:{
         color: '#FFFFFF',
         fontSize: 14,
         right:126,
-        top: -10,
+        top: -620,
 
     },
 
@@ -193,14 +193,14 @@ const styles = StyleSheet.create({
         color: '#7FFFD4',
         fontSize: 14,
         right:124,
-        top: 10,
+        top: -610,
     },
 
     email2:{
         color: '#FFFFFF',
         fontSize: 14,
         right:90,
-        top: 10,
+        top: -610,
 
     },
    

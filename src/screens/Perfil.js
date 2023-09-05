@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 25,
         top: -625,
+        fontWeight: 'bold',
     },
 
     Icone1: {
