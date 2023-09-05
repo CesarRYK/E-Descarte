@@ -1,19 +1,20 @@
 import React from "react";
-import { LinearGradient } from 'expo-linear-gradient';
 
 import { EvilIcons } from "@expo/vector-icons";
-
-import {View, Text, StyleSheet, ImageBackground, Pressable, Image} from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
 
 
 export default function TelaInicial({ navigation }) {
     return(
         <View style={styles.container}>
-            <ImageBackground
-                style={styles.stretch}
-                source={require('./imagens/Fundo.png')}
-                resizeMode="cover"
-            />
+                  <LinearGradient style={{
+                height: 950, 
+                width: 600, 
+                borderRadius: 5}}
+	            colors={['#009582','#009452']}>
+
+                    </LinearGradient>  
             
             <Text style={styles.textColor}>E-Descarte</Text>
             <Text style={styles.Text3}>PÁGINA INICIAL</Text>
@@ -35,7 +36,7 @@ export default function TelaInicial({ navigation }) {
             </Pressable>
 
             <Pressable onPress={() => navigation.navigate('Rewards')}>
-            <Text style={styles.EdPointsTexto}>EdPoints</Text>
+            <Text style={styles.EdPointsTexto}>Descartar</Text>
             </Pressable>
 
             <Pressable onPress={() => navigation.navigate('Sugestão')}>
@@ -108,10 +109,8 @@ export default function TelaInicial({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'stretch',
-        backgroundColor: '#228b22',
+        alignItems: 'center',
+        justifyContent: 'space-between',
 
         
     },
@@ -126,14 +125,13 @@ const styles = StyleSheet.create({
     textColor: {
         color: '#f0fff0',
         fontSize: 28,
-        top: -10,
-        left: 142,
-       
+        top: -870,
+               
     },
 
     Text1: {
         color: '#fff',
-        top: 60,
+        top: -820,
         left: 10,
         fontSize: 20,
         textAlign: 'center',
@@ -142,34 +140,34 @@ const styles = StyleSheet.create({
 
     Text2: {
         color: '#fff',
-        top: 60,
-        left: 170,
+        top: -820,
+        left: 45,
         fontSize: 20,
     },
 
     Text3: {
         color: '#7fffd4',
-        top: -10,
-        left: 160,
+        top: -870,
+    
     },
 
     TarefasTexto:{
-        top: 230,
-        left: 70,
+        top: -520,
+        left: -70,
         color: '#ffffff',
         fontWeight: 'bold',
         fontSize: 17,
     },
     VerDescartesTexto:{
-        top: 210,
-        left: 230,
+        top: -710,
+        left: -68,
         fontWeight: 'bold',
         fontSize: 15,
         color: '#ffffff',
     },
 
     EdPointsTexto:{
-        top: 330,
+        top: -730,
         left: 70,
         fontWeight: 'bold',
         fontSize: 15,
@@ -177,8 +175,8 @@ const styles = StyleSheet.create({
     },
 
     SugestoesTexto:{
-        top: 310,
-        left: 255,
+        top: -582,
+        left: 70,
         color: '#ffffff',
         fontWeight: 'bold',
         fontSize: 15,
@@ -189,8 +187,8 @@ const styles = StyleSheet.create({
     },
 
     Usuario: {
-        top: -120,
-        left: 40,
+        top: -1020,
+        left: -90,
     },
 
     Descartes: {
@@ -216,8 +214,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -125,
-        left: 60,
+        top: -875,
+        left: -70,
 
     },
 
@@ -231,8 +229,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -70,
-        left: 60,
+        top: -1125,
+        left: 70,
 
     },
 
@@ -246,8 +244,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -145,
-        left: 250,
+        top: -1035,
+        left: 69,
     },
 
     localizacao: {
@@ -260,8 +258,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -45,
-        left: 250,
+        top: -965,
+        left: -75,
     }
 
 
