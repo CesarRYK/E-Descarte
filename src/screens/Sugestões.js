@@ -8,11 +8,12 @@ export default Sugestão;
 function Sugestão({}) {
     return (
         <View style={styles.container}>
-            <ImageBackground
-                style={styles.stretch}
-                source={require('./imagens/Fundo.png')}
-                resizeMode="cover"
-            />
+           <LinearGradient style={{
+                height: 950, 
+                width: 600, 
+                borderRadius: 5}}
+	            colors={['#009582','#009452']}>
+                </LinearGradient>
 
             <Text style={styles.texto}>Diga aqui a sua sugestão de como poderemos melhorar
                 a experiência no aplicativo.
@@ -53,7 +54,7 @@ function Sugestão({}) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         alignItems: 'center',
         backgroundColor: '#0ce8c0',
 
@@ -74,13 +75,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#f8f8ff',
         padding: 5,
         marginBottom: 2,
-        top: -120,
+        top: -820,
         width: 360,
         fontSize: 18,
     },
 
     texto2: {
-        top: 210,
+        top: -510,
         color: '#000000',
         borderWidth: 1,
         borderColor: '#f5fffa',
@@ -94,14 +95,14 @@ const styles = StyleSheet.create({
     },
 
     box: {
-        top: -150,
+        top: -850,
     },
 
     seta: {
-        top: -300,
+        top: -1000,
     },
 
     carta: {
-        top: -460,
+        top: -1160,
     }
 });

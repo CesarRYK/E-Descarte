@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     Avançar: {
         color: '#5f9ea0',
         top: -490,
-        left: 45,
+        left: 40,
         borderWidth: 3,
         borderRadius: 40,
         marginBottom: 20,
@@ -167,14 +167,14 @@ const styles = StyleSheet.create({
         padding: 8,
         top: -510,
         width: 370,
-        left: 110,
+        left: 100,
         fontSize: 20,
     },
 
     facebook: {
         color: '#ffffff',
         top: -520,
-        left: 10,
+        left: 3,
         borderRadius: 40,
         marginBottom: 20,
         backgroundColor: '#00008b',
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     google: {
         color: '#000000',
         top: -530,
-        left: 10,
+        left: 2,
         borderRadius: 40,
         marginBottom: 20,
         backgroundColor: '#ffffff',

@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, ImageBackground, Pressable} from 'react-native';
+import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
@@ -9,13 +9,14 @@ export default Perfil;
 function Perfil({ navigation }) {
     return (
         <View style={styles.container}>
-                <ImageBackground
-                style={styles.stretch}
-                source={require('./imagens/Fundo.png')}
-                resizeMode="cover"
-            />
+                  <LinearGradient style={{
+                height: 950, 
+                width: 600, 
+                borderRadius: 5}}
+	            colors={['#009582','#009452']}>
 
-
+                    </LinearGradient>
+  
             <Text style={styles.EDescarte}>E-DESCARTE</Text>
             <Text style={styles.Filtro}>PERFIL DO USUÁRIO</Text>
             <Text style={styles.Usuário}>Olá, Luiz</Text>
@@ -64,45 +65,41 @@ function Perfil({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#0ce8c0',
-
-        
+        justifyContent: 'space-between',        
     },
 
     Usuário: {
         color: '#fff',
         fontSize: 25,
-        top: -80,
+        top: -625,
     },
 
     Icone1: {
         color: '#fff',
         fontSize: 120,
-        top: -330,
+        top: -870,
         left: 0,
     },
 
     Icone2: {
         color: '#fff',
         fontSize: 25,
-        top: -240,
+        top: -760,
         left: 0,
     },
 
     Icone3: {
         color: '#fff',
         fontSize: 25,
-        top: -265,
+        top: -785,
         left: -130,
     },
 
     Icone4: {
         color: '#fff',
         fontSize: 25,
-        top: -290,
+        top: -810,
         left: 136,
     },
 
@@ -117,26 +114,26 @@ const styles = StyleSheet.create({
         color: '#fff',
         fontSize: 15,
         alignItems: 'center',
-        top: -85,
+        top: -630,
     },
 
     DadoPessoais: {
         color: '#fff',
-        top: -61,
+        top: -580,
         left: -135,
 
     },
 
    DesempenhoUsuario: {
         color: '#fff',
-        top: -80,
+        top: -599,
         alignItems: 'center',
     },
 
     Estatisticas: {
         color: '#fff',
         alignItems: 'center',
-        top: -99,
+        top: -618,
         left: 130,
     },
 
@@ -166,26 +163,26 @@ const styles = StyleSheet.create({
 
     Nivel: {
         color: '#7FFFD4',
-        top: -180,
+        top: -725,
         left: -130,
     },
 
     EdPoints: {
         color: '#7FFFD4',
-        top: -196,
+        top: -745,
         left: 130,
     },
 
     EDescarte: {
         color: '#fff',
-        top: -250,
+        top: -850,
         fontSize: 17,
     },
 
     Filtro: {
         color: '#7FFFD4',
         fontSize: 13,
-        top: -245,
+        top: -850,
     },
 
     stretch: {

@@ -7,11 +7,22 @@ export default Tarefas;
 function Tarefas({}) {
     return (
         <View style={styles.container}>
-            <ImageBackground
-                style={styles.stretch}
-                source={require('./imagens/Fundo.png')}
-                resizeMode="cover"
-            />
+            <LinearGradient style={{
+                height: 950, 
+                width: 600, 
+                borderRadius: 5}}
+	            colors={['#009582','#009452']}>
+                </LinearGradient>
+                <View>
+                    <Text style={styles.texto4}>0/3</Text>
+                    <FontAwesome5 style={styles.Icone}
+                    name='tasks'
+                    size={80}
+                    color='#fff'
+                    
+                    />
+    
+                </View>
             <View>
                 <Text style={styles.texto1}>Realize um descarte de lixo eletrônico quinzenalmente.</Text>
             </View>
@@ -24,16 +35,6 @@ function Tarefas({}) {
                 <Text style={styles.texto3}>Conclua 2 tarefas para receber um bônus.</Text>
             </View>
 
-            <View>
-                <Text style={styles.texto4}>0/3</Text>
-                <FontAwesome5 style={styles.Icone}
-                name='tasks'
-                size={80}
-                color='#fff'
-                
-                />
-
-            </View>
 
 
         </View>
@@ -44,9 +45,9 @@ function Tarefas({}) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#0ce8c0',
+        justifyContent: 'space-between',
 
     },
     stretch: {
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
     },
 
     texto1: {
-        top: -280,
+        top: -680,
         left: 0,
         color: '#5f9ea0',
         borderWidth: 0,
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
     },
 
     texto2: {
-        top: -250,
+        top: -660,
         left: 0,
         color: '#5f9ea0',
         borderWidth: 0,
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
     },
 
     texto3: {
-        top: -200,
+        top: -640,
         left: 0,
         color: '#5f9ea0',
         borderWidth: 0,
@@ -95,14 +96,14 @@ const styles = StyleSheet.create({
     },
 
     texto4: {
-        top: -120,
+        top: -670,
         left: 10,
         fontSize: 35,
         color: '#f0f8ff',
     },
 
     Icone: {
-        top: -120,
+        top: -820,
         left: 0,
 
     }

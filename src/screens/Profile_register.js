@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, Pressable, ImageBackground, Image} from 'react-native';
+import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
 import { Entypo } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
@@ -10,16 +10,21 @@ export default Registro;
 function Registro({ navigation }) {
     return(
         <View style={styles.container} >
-            <ImageBackground
-                style={styles.stretch}
-                source={require('./imagens/Fundo.png')}
-                resizeMode="cover"
-            />     
-            <ImageBackground
+           <LinearGradient style={{
+                height: 950, 
+                width: 600, 
+                borderRadius: 5}}
+	            colors={['#009582','#009452']}>
+
+            <Image
                 style={styles.logo}
                 source={require('./imagens/e-descarte.png')}
-                
-            />
+                />
+
+                </LinearGradient>
+
+
+
             <Text style={styles.cadastro}>
                 Faça seu cadastro
             </Text>
@@ -88,9 +93,8 @@ function Registro({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
+        justifyContent: 'space-between',
     },
     stretch: {
         width: 490,
@@ -101,19 +105,17 @@ const styles = StyleSheet.create({
     },
 
     logo:{
-        width: 110,
-        top: -80,
-        flex: 1,
-        height: 120,
-        resizeMode: 'cover',
+        top: 90,
+        height: 180,
+        width: 165,
         justifyContent: 'center',
-        left: 1,
+        left: 220,
     },
 
     cadastro:{
         color: '#FFFFFF',
         padding: 8,
-        top: -90,
+        top: -690,
         width: 370,
         left: 100,
         fontSize: 20,
@@ -127,7 +129,7 @@ const styles = StyleSheet.create({
         padding: 8,
         borderRadius: 10,
         marginBottom: 20,
-        top: -80,
+        top: -680,
         width: 370,
         height: -35,
         textAlign: 'left',
@@ -146,13 +148,13 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         width: 300,
-        top: -40,
+        top: -650,
         textAlign: 'center',
     },
 
     facebook: {
         color: '#ffffff',
-        top: -30,
+        top: -660,
         left: 0,
         borderRadius: 40,
         marginBottom: 20,
@@ -166,7 +168,7 @@ const styles = StyleSheet.create({
 
     google: {
         color: '#000000',
-        top: -30,
+        top: -670,
         left: 0,
         borderRadius: 40,
         marginBottom: 20,
@@ -187,7 +189,7 @@ const styles = StyleSheet.create({
     continuar:{
         color: '#FFFFFF',
         padding: 8,
-        top: -60,
+        top: -660,
         width: 370,
         left: 110,
         fontSize: 20,
