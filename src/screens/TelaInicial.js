@@ -35,7 +35,7 @@ export default function TelaInicial({ navigation }) {
             <Text style={styles.VerDescartesTexto}>Mapa de Descartes</Text>
             </Pressable>
 
-            <Pressable onPress={() => navigation.navigate('Rewards')}>
+            <Pressable onPress={() => navigation.navigate('FazerDescarte')}>
             <Text style={styles.EdPointsTexto}>Descartar</Text>
             </Pressable>
 
@@ -79,7 +79,7 @@ export default function TelaInicial({ navigation }) {
                 />
                 </Pressable>
 
-                <Pressable onPress={() => navigation.navigate('Rewards')}
+                <Pressable onPress={() => navigation.navigate('FazerDescarte')}
                >
                 <Image
                 style={styles.EdPoints}

@@ -22,6 +22,7 @@ import InfoStore from './src/screens/InfoStore';
 import Uber from './src/screens/Uber';
 import DadosPessoais from './src/screens/DadosPessoais';
 import TelaEducacional from './src/screens/TelaEducacional';
+import FazerDescarte from './src/screens/FazerDescarte';
 
 const Stack = createNativeStackNavigator();
 
@@ -192,6 +193,16 @@ export default function App() {
           }}  
           name='TelaEducacional'
           component={TelaEducacional}
+        />
+
+          <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
+          name='FazerDescarte'
+          component={FazerDescarte}
         />
 
       </Stack.Navigator>
