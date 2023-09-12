@@ -12,7 +12,12 @@ export default function CadastrarDescarte({  }) {
 	            colors={['#009582','#009452']}>
                 </LinearGradient>
             
-            
+                <Pressable onPress={() => navigation.navigate('TelaInicial')}>
+                <Image
+                style={styles.LogOut}
+                source={require('./imagens/LogOut.png')}
+                />
+                </Pressable>
             
             </View>
     )
@@ -23,5 +28,10 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         justifyContent: 'space-between', 
+    },
+
+    LogOut: {
+        top: -1080,
+        left: -155,
     },
 });
