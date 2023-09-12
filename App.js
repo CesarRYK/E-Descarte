@@ -23,6 +23,7 @@ import Uber from './src/screens/Uber';
 import DadosPessoais from './src/screens/DadosPessoais';
 import TelaEducacional from './src/screens/TelaEducacional';
 import FazerDescarte from './src/screens/FazerDescarte';
+import CadastrarDescarte from './src/screens/CadastrarDescarte';
 
 const Stack = createNativeStackNavigator();
 
@@ -203,6 +204,16 @@ export default function App() {
           }}  
           name='FazerDescarte'
           component={FazerDescarte}
+        />
+
+        <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
+          name='CadastrarDescarte'
+          component={CadastrarDescarte}
         />
 
       </Stack.Navigator>

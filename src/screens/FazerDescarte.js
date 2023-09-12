@@ -1,4 +1,3 @@
-
 import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
@@ -13,10 +12,14 @@ export default function FazerDescarte({ navigation }) {
 	            colors={['#009582','#009452']}>
                 </LinearGradient>
 
+
+
+            <Pressable onPress={() => navigation.navigate('CadastrarDescarte')}>
                 <Image
                 style={styles.Botao}
                 source={require('./imagens/BotaoMais.png')}
             />
+            </Pressable>
 
                 <Image
                 style={styles.Linha}
@@ -80,7 +83,7 @@ const styles = StyleSheet.create({
     },
 
     Botao: {
-        top: -750,
+        top: -745,
         width: 150,
         height: 150,
     },
