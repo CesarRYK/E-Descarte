@@ -13,7 +13,11 @@ export default function FazerDescarte({}) {
 	            colors={['#009582','#009452']}>
                 </LinearGradient>
 
-
+                <Image
+                style={styles.Botao}
+                source={require('./imagens/BotaoMais.png')}
+                
+            />
 
                     <Text style={styles.TextoTitulo}>E-DESCARTE</Text>
                     <Text style={styles.Text1}>DESCARTES</Text>
@@ -33,23 +37,29 @@ const styles = StyleSheet.create({
     TextoTitulo: {
         color: '#f0fff0',
         fontSize: 28,
-        top: -870,      
+        top: -1055,      
     },
 
     Text1: {
         color: '#7fffd4',
-        top: -870,
+        top: -1055,
     },
 
     Clique: {
         color: '#f0fff0',
-        top: -820,
+        top: -1020,
     },
 
     Historico: {
         color: '#f0fff0',
-        top: -610,
+        top: -780,
         left: -90,
         fontSize: 15,
     },
+
+    Botao: {
+        top: -770,
+        width: 150,
+        height: 150,
+    }
 });
