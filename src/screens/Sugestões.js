@@ -1,11 +1,11 @@
-import { StyleSheet, View, Pressable, Text, ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Pressable, Text, Image, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { SimpleLineIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default Sugestão;
 
-function Sugestão({}) {
+function Sugestão({ navigation }) {
     return (
         <View style={styles.container}>
            <LinearGradient style={{
@@ -14,6 +14,14 @@ function Sugestão({}) {
                 borderRadius: 5}}
 	            colors={['#009582','#009452']}>
                 </LinearGradient>
+
+
+                <Pressable onPress={() => navigation.navigate('TelaInicial')}>
+                <Image
+                style={styles.LogOut}
+                source={require('./imagens/LogOut.png')}
+                />
+                </Pressable>
 
             <Text style={styles.texto}>Diga aqui a sua sugestão de como poderemos melhorar
                 a experiência no aplicativo.
@@ -104,5 +112,10 @@ const styles = StyleSheet.create({
 
     carta: {
         top: -1160,
-    }
+    },
+
+    LogOut: {
+        top: -900,
+        left: -155,
+    },
 });

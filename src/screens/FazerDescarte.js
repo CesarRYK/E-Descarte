@@ -1,9 +1,9 @@
 
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 
-export default function FazerDescarte({}) {
+export default function FazerDescarte({ navigation }) {
     return(
             <View style={styles.container}>
                 <LinearGradient style={{
@@ -33,6 +33,15 @@ export default function FazerDescarte({}) {
                 source={require('./imagens/LinhaSeta.png')}
                 />
 
+
+                <Pressable onPress={() => navigation.navigate('TelaInicial')}>
+                <Image
+                style={styles.LogOut}
+                source={require('./imagens/LogOut.png')}
+                />
+                </Pressable>
+
+
                     <Text style={styles.TextoTitulo}>E-DESCARTE</Text>
                     <Text style={styles.Text1}>DESCARTES</Text>
                     <Text style={styles.Clique}>      CLIQUE PARA {'\n'} FAZER O DESCARTE</Text>
@@ -50,34 +59,34 @@ const styles = StyleSheet.create({
     TextoTitulo: {
         color: '#f0fff0',
         fontSize: 28,
-        top: -1055,      
+        top: -1095,      
     },
 
     Text1: {
         color: '#7fffd4',
-        top: -1055,
+        top: -1095,
     },
 
     Clique: {
         color: '#f0fff0',
-        top: -1030,
+        top: -1060,
     },
 
     Historico: {
         color: '#f0fff0',
-        top: -840,
+        top: -880,
         left: -90,
         fontSize: 15,
     },
 
     Botao: {
-        top: -735,
+        top: -750,
         width: 150,
         height: 150,
     },
 
     Linha: {
-        top: -692,
+        top: -710,
         left: 80,
     },
 
@@ -89,5 +98,10 @@ const styles = StyleSheet.create({
     LinhaSeta2: {
         top: -400,
 
+    },
+    
+    LogOut: {
+        top: -1080,
+        left: -155,
     },
 });

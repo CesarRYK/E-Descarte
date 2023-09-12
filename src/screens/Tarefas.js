@@ -1,10 +1,10 @@
-import { StyleSheet, View, Pressable, Text, ImageBackground } from 'react-native';
+import { StyleSheet, View, Pressable, Text, Image } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default Tarefas;
 
-function Tarefas({}) {
+function Tarefas({ navigation }) {
     return (
         <View style={styles.container}>
             <LinearGradient style={{
@@ -13,6 +13,14 @@ function Tarefas({}) {
                 borderRadius: 5}}
 	            colors={['#009582','#009452']}>
                 </LinearGradient>
+
+                <Pressable onPress={() => navigation.navigate('TelaInicial')}>
+                <Image
+                style={styles.LogOut}
+                source={require('./imagens/LogOut.png')}
+                />
+                </Pressable>
+
                 <View>
                     <Text style={styles.texto4}>0/3</Text>
                     <FontAwesome5 style={styles.Icone}
@@ -106,5 +114,10 @@ const styles = StyleSheet.create({
         top: -820,
         left: 0,
 
-    }
+    },
+
+    LogOut: {
+        top: -900,
+        left: -155,
+    },
 });
