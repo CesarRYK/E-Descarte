@@ -2,7 +2,7 @@ import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 
-export default function CadastrarDescarte({  }) {
+export default function CadastrarDescarte({ navigation }) {
     return(
             <View style={styles.container}>
                 <LinearGradient style={{
