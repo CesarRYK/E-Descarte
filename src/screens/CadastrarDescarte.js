@@ -12,6 +12,13 @@ export default function CadastrarDescarte({ navigation }) {
 	            colors={['#009582','#009452']}>
                 </LinearGradient>
             
+                <Image
+                style={styles.imagem}
+                source={require('./imagens/ImgDescarte.png')}
+                
+            />
+            
+
                 <Pressable onPress={() => navigation.navigate('TelaInicial')}>
                 <Image
                 style={styles.LogOut}
@@ -28,7 +35,9 @@ export default function CadastrarDescarte({ navigation }) {
 
                 <Text style={styles.ClSele}>CLIQUE PARA SELECIONAR</Text>
                 <Text style={styles.Descreva}>Descreva o tipo de descarte...</Text>
-                
+                <Text style={styles.Selecione}>Selecione sua unidade de descarte...</Text>
+
+
                 <Text style={styles.Concluir}>CONCLUIR</Text>
                 <Text style={styles.TirarFoto}>TIRAR FOTO</Text>
                 <Text style={styles.Importar}> IMPORTAR</Text>
@@ -49,6 +58,12 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between', 
     },
 
+
+    imagem: {
+        borderRadius: 200 / 2,
+
+    },
+
     TextoTitulo: {
         color: '#f0fff0',
         fontSize: 28,
@@ -67,7 +82,7 @@ const styles = StyleSheet.create({
 
     Concluir: {
         color: '#5f9ea0',
-        top: -320,
+        top: -560,
         borderWidth: 3,
         borderRadius: 40,
         backgroundColor: '#f8f8ff',
@@ -83,7 +98,7 @@ const styles = StyleSheet.create({
 
     TirarFoto: {
         color: '#5f9ea0',
-        top: -490,
+        top: -560,
         left: 40,
         borderWidth: 3,
         borderRadius: 40,
@@ -97,7 +112,7 @@ const styles = StyleSheet.create({
 
     Importar: {
         color: '#5f9ea0',
-        top: -490,
+        top: -520,
         left: 40,
         borderWidth: 3,
         borderRadius: 40,
@@ -153,14 +168,24 @@ const styles = StyleSheet.create({
     },
 
     Descreva: {
-        color: '#5f9ea0',
+        color: '#808080',
         borderWidth: 3,
         borderColor: '#FFFFFF',
         backgroundColor: '#FFFFFF',
         padding: 8,
         borderRadius: 40,
-        marginBottom: 20,
         top: -650,
         fontSize: 13,
+    },
+
+    Selecione: {
+        color: '#808080',
+        borderWidth: 3,
+        borderColor: '#FFFFFF',
+        backgroundColor: '#FFFFFF',
+        padding: 5,
+        borderRadius: 4,
+        top: -650,
+        fontSize: 11,
     },
 });
