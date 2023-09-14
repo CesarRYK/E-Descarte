@@ -26,12 +26,17 @@ export default function CadastrarDescarte({ navigation }) {
                 <Text style={styles.Adicione}>1- Adicione uma imagem ao seu Descarte:</Text>
                 <Text style={styles.Preencha}>2- Preencha os campos abaixo:</Text>
 
+                <Text style={styles.ClSele}>CLIQUE PARA SELECIONAR</Text>
+                <Text style={styles.Descreva}>Descreva o tipo de descarte...</Text>
+                
                 <Text style={styles.Concluir}>CONCLUIR</Text>
                 <Text style={styles.TirarFoto}>TIRAR FOTO</Text>
                 <Text style={styles.Importar}> IMPORTAR</Text>
+                
 
-
-
+                <Text style={styles.Titulo}>TÍTULO</Text>
+                <Text style={styles.Tipo}>TIPO</Text>
+                <Text style={styles.Unidade}>UNIDADE</Text>
 
             </View>
     )
@@ -105,10 +110,57 @@ const styles = StyleSheet.create({
     },
 
     Adicione: {
-
+        color: '#f0fff0',
+        top: -500,
     },
 
     Preencha: {
+        color: '#f0fff0',
+        top: -500,
+    },
 
+    Titulo: {
+        color: '#7fffd4',
+        fontSize: 13,
+        top: -950,
+    },
+
+    Tipo: {
+        color: '#7fffd4',
+        fontSize: 13,
+        top: -950,
+    },
+
+    Unidade: {
+        color: '#7fffd4',
+        fontSize: 13,
+        top: -950,
+    },
+
+    ClSele: {
+        color: '#5f9ea0',
+        borderWidth: 3,
+        borderRadius: 40,
+        backgroundColor: '#f8f8ff',
+        borderColor: '#f5fffa',
+        padding: 6,
+        width: 180,
+        height: 32,
+        fontSize: 13,
+        textAlign: 'center',
+        top: -650,
+        fontWeight: 'bold',
+    },
+
+    Descreva: {
+        color: '#5f9ea0',
+        borderWidth: 3,
+        borderColor: '#FFFFFF',
+        backgroundColor: '#FFFFFF',
+        padding: 8,
+        borderRadius: 40,
+        marginBottom: 20,
+        top: -650,
+        fontSize: 13,
     },
 });
