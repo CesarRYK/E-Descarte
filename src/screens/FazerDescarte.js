@@ -14,6 +14,15 @@ export default function FazerDescarte({ navigation }) {
 
 
 
+                    <Pressable onPress={() => navigation.navigate('TelaInicial')}>
+                <Image
+                style={styles.LogOut}
+                source={require('./imagens/LogOut.png')}
+                />
+                </Pressable>
+
+
+
             <Pressable onPress={() => navigation.navigate('CadastrarDescarte')}>
                 <Image
                 style={styles.Botao}
@@ -54,6 +63,11 @@ export default function FazerDescarte({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+    LogOut: {
+        top: -1105,
+        left: -155,
+    },
+
     container: {
         alignItems: 'center',
         justifyContent: 'space-between', 
@@ -101,10 +115,5 @@ const styles = StyleSheet.create({
     LinhaSeta2: {
         top: -400,
 
-    },
-    
-    LogOut: {
-        top: -1080,
-        left: -155,
     },
 });

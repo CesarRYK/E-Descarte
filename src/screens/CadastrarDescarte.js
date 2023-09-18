@@ -11,7 +11,7 @@ export default function CadastrarDescarte({ navigation }) {
                 borderRadius: 5}}
 	            colors={['#009582','#009452']}>
                 </LinearGradient>
-            
+
                 <Image
                 style={styles.imagem}
                 source={require('./imagens/ImgDescarte.png')}
@@ -19,21 +19,38 @@ export default function CadastrarDescarte({ navigation }) {
             />
             
 
+                <Image
+                style={styles.linhaverde1}
+                source={require('./imagens/LinhaVerde.png')}
+                />
+
+                <Image
+                style={styles.linhaverde2}
+                source={require('./imagens/LinhaVerde.png')}
+                />
+
+                <Image
+                style={styles.linhaverde3}
+                source={require('./imagens/LinhaVerde.png')}
+                />
+            
                 <Pressable onPress={() => navigation.navigate('TelaInicial')}>
                 <Image
                 style={styles.LogOut}
                 source={require('./imagens/LogOut.png')}
                 />
                 </Pressable>
-            
+
                 <Text style={styles.TextoTitulo}>E-DESCARTE</Text>
                 <Text style={styles.Text1}>DESCARTES</Text>
 
 
-                <Text style={styles.Adicione}>1- Adicione uma imagem ao seu Descarte:</Text>
+                <Text style={styles.Adicione}>1- Adicione uma imagem {'\n'} ao seu Descarte:</Text>
                 <Text style={styles.Preencha}>2- Preencha os campos abaixo:</Text>
+                <Text style={styles.Insira}>Insira um título ao seu descarte...</Text>
 
                 <Text style={styles.ClSele}>CLIQUE PARA SELECIONAR</Text>
+                <Text style={styles.Ou}>Ou</Text>
                 <Text style={styles.Descreva}>Descreva o tipo de descarte...</Text>
                 <Text style={styles.Selecione}>Selecione sua unidade de descarte...</Text>
 
@@ -46,7 +63,6 @@ export default function CadastrarDescarte({ navigation }) {
                 <Text style={styles.Titulo}>TÍTULO</Text>
                 <Text style={styles.Tipo}>TIPO</Text>
                 <Text style={styles.Unidade}>UNIDADE</Text>
-
             </View>
     )
 }
@@ -60,29 +76,32 @@ const styles = StyleSheet.create({
 
 
     imagem: {
-        borderRadius: 200 / 2,
-
+        width: 140,
+        height: 140,
+        top: -830,
+        left: -120,
+        borderRadius: 60,
     },
 
     TextoTitulo: {
         color: '#f0fff0',
         fontSize: 28,
-        top: -920,      
+        top: -1060,      
     },
 
     Text1: {
         color: '#7fffd4',
-        top: -920,
+        top: -1055,
     },
 
     LogOut: {
-        top: -880,
+        top: -1030,
         left: -155,
     },
 
     Concluir: {
         color: '#5f9ea0',
-        top: -560,
+        top: -600,
         borderWidth: 3,
         borderRadius: 40,
         backgroundColor: '#f8f8ff',
@@ -98,58 +117,74 @@ const styles = StyleSheet.create({
 
     TirarFoto: {
         color: '#5f9ea0',
-        top: -560,
-        left: 40,
+        top: -1180,
+        left: 20,
         borderWidth: 3,
         borderRadius: 40,
         backgroundColor: '#f8f8ff',
         borderColor: '#f5fffa',
-        padding: 8,
-        width: 120,
+        padding: 2,
+        width: 100,
         textAlign: 'center',
         fontWeight: 'bold',
+        fontSize: 12,
     },
 
     Importar: {
         color: '#5f9ea0',
-        top: -520,
-        left: 40,
+        top: -1206,
+        left: 140,
         borderWidth: 3,
         borderRadius: 40,
         backgroundColor: '#f8f8ff',
         borderColor: '#f5fffa',
-        padding: 8,
-        width: 120,
+        padding: 2,
+        width: 100,
         textAlign: 'center',
         fontWeight: 'bold',
+        fontSize: 12,
     },
 
     Adicione: {
         color: '#f0fff0',
-        top: -500,
+        top: -1020,
+        left: 60,
+        fontSize: 16,
     },
 
     Preencha: {
         color: '#f0fff0',
-        top: -500,
+        top: -930,
+        left: -80,
     },
 
     Titulo: {
         color: '#7fffd4',
         fontSize: 13,
-        top: -950,
+        top: -1130,
+        left: -158,
+    },
+
+    Insira: {
+       fontStyle: 'italic',
+       color: '#f0fff0',
+       top: -895,
+       left: -70,
+       fontSize: 15,
     },
 
     Tipo: {
         color: '#7fffd4',
         fontSize: 13,
-        top: -950,
+        top: -1095,
+        left: -165,
     },
 
     Unidade: {
         color: '#7fffd4',
         fontSize: 13,
-        top: -950,
+        top: -1040,
+        left: -151,
     },
 
     ClSele: {
@@ -158,13 +193,20 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         backgroundColor: '#f8f8ff',
         borderColor: '#f5fffa',
-        padding: 6,
-        width: 180,
-        height: 32,
-        fontSize: 13,
+        padding: 4,
+        width: 150,
+        height: 22,
+        fontSize: 10,
         textAlign: 'center',
-        top: -650,
+        top: -855,
+        left: -110,
         fontWeight: 'bold',
+    },
+
+    Ou: {
+        color: '#f0fff0',
+        top: -877,
+        left: -19,
     },
 
     Descreva: {
@@ -172,10 +214,13 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         borderColor: '#FFFFFF',
         backgroundColor: '#FFFFFF',
-        padding: 8,
+        width: 190,
+        height: 22,
+        padding: 4,
         borderRadius: 40,
-        top: -650,
-        fontSize: 13,
+        top: -897,
+        left: 90,
+        fontSize: 10,
     },
 
     Selecione: {
@@ -183,9 +228,29 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         borderColor: '#FFFFFF',
         backgroundColor: '#FFFFFF',
-        padding: 5,
+        padding: 3,
         borderRadius: 4,
-        top: -650,
-        fontSize: 11,
+        top: -850,
+        left: -95,
+        fontSize: 10,
+    },
+
+    linhaverde1: {
+        top: -768,
+        left: 45,
+        width: 350,
+    },
+
+
+    linhaverde2: {
+        left: 30,
+        top: -716,
+        width: 350,
+    },
+
+    linhaverde3: {
+        left: 59,
+        top: -644,
+        width: 350,
     },
 });

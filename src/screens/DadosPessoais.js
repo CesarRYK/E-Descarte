@@ -1,11 +1,11 @@
 
-import {View, Text, StyleSheet, ImageBackground} from 'react-native';
+import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
 import { EvilIcons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default DadosPessoais;
 
-function DadosPessoais() {
+function DadosPessoais({ navigation }) {
     return (
         
         <View style={styles.container}>
@@ -16,6 +16,14 @@ function DadosPessoais() {
 	            colors={['#009582','#009452']}>
 
                     </LinearGradient>        
+
+                    <Pressable onPress={() => navigation.navigate('TelaInicial')}>
+                <Image
+                style={styles.LogOut}
+                source={require('./imagens/LogOut.png')}
+                />
+                </Pressable>
+
 
             <Text style={styles.EDescarte}>E-DESCARTE</Text>
             <Text style={styles.Filtro}>PERFIL DO USUÁRIO</Text>
@@ -55,6 +63,11 @@ function DadosPessoais() {
 }
 
 const styles = StyleSheet.create({
+    LogOut: {
+        top: -880,
+        left: -155,
+    },
+    
     container: {
         alignItems: 'center',
         justifyContent: 'space-between',
