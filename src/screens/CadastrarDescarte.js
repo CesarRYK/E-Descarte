@@ -81,6 +81,8 @@ const styles = StyleSheet.create({
         top: -830,
         left: -120,
         borderRadius: 60,
+        borderColor: "#adff2f",
+        borderWidth: 6,
     },
 
     TextoTitulo: {
