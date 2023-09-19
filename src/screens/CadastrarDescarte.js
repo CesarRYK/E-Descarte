@@ -76,13 +76,13 @@ const styles = StyleSheet.create({
 
 
     imagem: {
-        width: 140,
+        width: 143,
         height: 140,
         top: -830,
         left: -120,
         borderRadius: 60,
-        borderColor: "#adff2f",
-        borderWidth: 6,
+        borderColor: "#00fa9a",
+        borderWidth: 5,
     },
 
     TextoTitulo: {
