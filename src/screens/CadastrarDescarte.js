@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
 
     LogOut: {
         top: -1030,
-        left: -155,
+        left: -175,
     },
 
     Concluir: {

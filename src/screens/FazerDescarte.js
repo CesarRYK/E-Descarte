@@ -65,7 +65,7 @@ export default function FazerDescarte({ navigation }) {
 const styles = StyleSheet.create({
     LogOut: {
         top: -1105,
-        left: -155,
+        left: -175,
     },
 
     container: {
@@ -76,12 +76,12 @@ const styles = StyleSheet.create({
     TextoTitulo: {
         color: '#f0fff0',
         fontSize: 28,
-        top: -1095,      
+        top: -1140,      
     },
 
     Text1: {
         color: '#7fffd4',
-        top: -1095,
+        top: -1140,
     },
 
     Clique: {
