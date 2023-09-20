@@ -1,7 +1,8 @@
 import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as React from 'react';
-import { List } from 'react-native-paper';
+import { List} from 'react-native-paper';
+import { TextStyle } from 'react-native-paper';
 
 
 export default function CadastrarDescarte({ navigation }) {
@@ -12,30 +13,31 @@ export default function CadastrarDescarte({ navigation }) {
             <View style={styles.container}>
         
                 <LinearGradient style={{
-                height: 950, 
-                width: 600, 
+                height: 835, 
+                width: 600,
                 borderRadius: 5}}
 	            colors={['#009582','#009452']}>
               </LinearGradient>
                 
-              //<List.Section
-                style={styles.ClSele} title="">
-      <List.Accordion
-        title="Uncontrolled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}>
-        <List.Item title="First item" />
-        <List.Item title="Second item" />
-      </List.Accordion>
+              <List.Section
+                style={styles.lista} title="">
+      
 
-      <List.Accordion
-        title="Controlled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}
-        expanded={expanded}
-        onPress={handlePress}>
-        <List.Item title="First item" />
-        <List.Item title="Second item" />
+      <List.Accordion 
+        title="Selecione"
+        titleStyle={styles.lista1}
+         >
+         
+        <List.Item title="Unidade 1" 
+        titleStyle={styles.lista1}/>
+        <List.Item title="Unidade 2" 
+        titleStyle={styles.lista1}/>
       </List.Accordion>
-    </List.Section>//
+      
+
+      
+      
+    </List.Section>
 
                 <Image
                 style={styles.imagem}
@@ -108,6 +110,16 @@ const styles = StyleSheet.create({
         borderRadius: 60,
         borderColor: "#00fa9a",
         borderWidth: 5,
+    },
+    lista:{
+        width: 130,
+        height: 80,
+        top: -330,
+        
+    
+    },
+    lista1:{
+        fontSize: 12,
     },
 
     TextoTitulo: {
