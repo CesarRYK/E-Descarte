@@ -24,14 +24,14 @@ export default function CadastrarDescarte({ navigation }) {
       
 
       <List.Accordion 
-        title="Selecione"
+        title="Selecione sua unidade de descarte..."
         titleStyle={styles.lista1}
          >
          
-        <List.Item title="Unidade 1" 
-        titleStyle={styles.lista1}/>
-        <List.Item title="Unidade 2" 
-        titleStyle={styles.lista1}/>
+        <List.Item title="Unidade 01 - Av. Djalma Batista" 
+        titleStyle={styles.lista2}/>
+        <List.Item title="Unidade 2 - Rua Leonardo M." 
+        titleStyle={styles.lista2}/>
       </List.Accordion>
       
 
@@ -112,14 +112,29 @@ const styles = StyleSheet.create({
         borderWidth: 5,
     },
     lista:{
-        width: 130,
-        height: 80,
+        width: 260,
+        height: -5,
         top: -330,
-        
+        color: '#808080',
+        borderColor: '#FFFFFF',
+        backgroundColor: '#FFFFFF',
+             
+                
     
     },
-    lista1:{
+   
+
+    lista2:{
         fontSize: 12,
+        color: '#808080',
+        backgroundColor: '#FFFFFF',
+        width: 180,
+        height: -90,
+        color: '#7fffd4',
+        fontWeight: 'bold',
+        borderColor: '#a9a9a9',
+        borderBottomRightRadius:56,
+        alignContent: 'center',
     },
 
     TextoTitulo: {
