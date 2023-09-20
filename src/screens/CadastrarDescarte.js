@@ -2,7 +2,7 @@ import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as React from 'react';
 import { List} from 'react-native-paper';
-import { TextStyle } from 'react-native-paper';
+
 
 
 export default function CadastrarDescarte({ navigation }) {
@@ -13,31 +13,12 @@ export default function CadastrarDescarte({ navigation }) {
             <View style={styles.container}>
         
                 <LinearGradient style={{
-                height: 835, 
-                width: 600,
-                borderRadius: 5}}
+                    height: 835, 
+                    width: 600,
+                    borderRadius: 5}}
 	            colors={['#009582','#009452']}>
               </LinearGradient>
                 
-              <List.Section
-                style={styles.lista} title="">
-      
-
-      <List.Accordion 
-        title="Selecione sua unidade de descarte..."
-        titleStyle={styles.lista1}
-         >
-         
-        <List.Item title="Unidade 01 - Av. Djalma Batista" 
-        titleStyle={styles.lista2}/>
-        <List.Item title="Unidade 2 - Rua Leonardo M." 
-        titleStyle={styles.lista2}/>
-      </List.Accordion>
-      
-
-      
-      
-    </List.Section>
 
                 <Image
                 style={styles.imagem}
@@ -90,6 +71,24 @@ export default function CadastrarDescarte({ navigation }) {
                 <Text style={styles.Titulo}>TÍTULO</Text>
                 <Text style={styles.Tipo}>TIPO</Text>
                 <Text style={styles.Unidade}>UNIDADE</Text>
+                    <List.Section
+                        style={styles.lista}>
+                  <List.Accordion 
+                    title="Selecione sua unidade de descarte..."
+                    titleStyle={styles.lista1}
+                     >
+                     
+                    <List.Item title="Unidade 01 - Av. Djalma Batista" 
+                    titleStyle={styles.fonteLista2}
+                    style={styles.lista2}
+                    
+                    />
+                    <List.Item title="Unidade 2 - Rua Leonardo M." 
+                    titleStyle={styles.fonteLista2}
+                    style={styles.lista2}
+                    />
+                  </List.Accordion>
+                </List.Section>
             </View>
     )
 }
@@ -112,29 +111,35 @@ const styles = StyleSheet.create({
         borderWidth: 5,
     },
     lista:{
-        width: 260,
-        height: -5,
-        top: -330,
+        width: 290,
+        top: -1000,
+        left: -40,
+        color: '#808080',
+        backgroundColor: '#FFFFFF',
+    },
+
+    lista1: {
         color: '#808080',
         borderColor: '#FFFFFF',
         backgroundColor: '#FFFFFF',
-             
-                
-    
+        fontSize: 11,
     },
    
 
     lista2:{
-        fontSize: 12,
-        color: '#808080',
         backgroundColor: '#FFFFFF',
-        width: 180,
+        width: 290,
         height: -90,
         color: '#7fffd4',
         fontWeight: 'bold',
         borderColor: '#a9a9a9',
-        borderBottomRightRadius:56,
-        alignContent: 'center',
+        borderWidth: 1,
+    },
+
+    fonteLista2: {
+        fontSize: 11,
+        color: '#7fffd4',
+        fontWeight: 'bold',
     },
 
     TextoTitulo: {
