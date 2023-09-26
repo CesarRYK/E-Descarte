@@ -1,12 +1,11 @@
+import { useState } from "react";
 import { View } from 'react-native';
-import {
-    requestForegroundPermissionsAsync,
-    getCurrentPositionAsync,
-    LocationObject
-} from 'expo-location';
+import { requestForegroundPermissionsAsync, getCurrentPositionAsync, LocationObject } from 'expo-location';
+
+import { styles } from "./styles";
 
 export default function Map() {
-    const [location, setLocation] = useState<LocationObject | null>(null);
+    const [location, setLocation] = useState<LocationObject || null>(null);
 
     async function requestLocationPermissions() {
         const {granted} = await requestForegroundPermissionsAsync();
@@ -14,8 +13,8 @@ export default function Map() {
     if  (granted) {
         const currentPosition = await getCurrentPositionAsync();
         setLocation(currentPosition);
-
-        console.log("Localização ATUAL =>", currentPosition);
+        
+        console.log("Localização =>", currentPosition);
     }
     }
 
@@ -24,9 +23,9 @@ useEffect(() => {
 }, []);
 
     return (
-<View>
+        <View style={styles.container}>
 
-</View>
+        </View>
     );
 }
 
