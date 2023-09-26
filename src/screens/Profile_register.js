@@ -1,13 +1,21 @@
-import {View, Text, StyleSheet, Pressable, Image} from 'react-native';
+import {View, Text, StyleSheet, Pressable, Image, TextInput} from 'react-native';
+import React, {useState} from 'react';
 import { Entypo } from "@expo/vector-icons";
-import { FontAwesome } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
-import { EvilIcons } from "@expo/vector-icons";
 import { LinearGradient } from 'expo-linear-gradient';
+
 
 export default Registro;
 
+
+
 function Registro({ navigation }) {
+
+const [nome, setNome] = useState('');
+const [email, setEmail] = useState('');
+const [senha, setSenha] = useState('');
+
+
+
     return(
         <View style={styles.container} >
            <LinearGradient style={{
@@ -31,31 +39,27 @@ function Registro({ navigation }) {
 
 
 
-            <Text style={styles.textColor}>
-            <EvilIcons
-            name='user'
-            size={19}
-            color='#000000'
-            
-            >
-                </EvilIcons>
-                Insira seu nome completo...
-            </Text>
+            <TextInput placeholder="Insira seu nome completo..." 
+            style={styles.textColor} onChangeText={text=>setNome(text)} />
 
 
 
-            <Text style={styles.textColor}>Insira seu email...</Text>
+            <TextInput placeholder="Insira seu email..." 
+            style={styles.textColor} onChangeText={text=>setNome(text)} />
 
 
 
-            <Text style={styles.textColor}>Insira sua senha...</Text>
+            <TextInput secureTextEntry={true}placeholder="Insira sua senha..." 
+            style={styles.textColor} onChangeText={text=>setNome(text)} />
 
 
 
-            <Text style={styles.textColor}>Repita sua senha...</Text>
+            <TextInput secureTextEntry={true}placeholder="Repita sua senha..." 
+            style={styles.textColor} onChangeText={text=>setNome(text)} />
 
 
-            <Text style={styles.textColor}>Insira seu telefone...</Text>
+            <TextInput placeholder="Insira seu telefone..." 
+            style={styles.textColor} onChangeText={text=>setNome(text)} />
 
 
 

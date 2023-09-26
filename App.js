@@ -24,6 +24,7 @@ import DadosPessoais from './src/screens/DadosPessoais';
 import TelaEducacional from './src/screens/TelaEducacional';
 import FazerDescarte from './src/screens/FazerDescarte';
 import CadastrarDescarte from './src/screens/CadastrarDescarte';
+import Map from './src/screens/map';
 
 const Stack = createNativeStackNavigator();
 
@@ -214,6 +215,16 @@ export default function App() {
           }}  
           name='CadastrarDescarte'
           component={CadastrarDescarte}
+        />
+
+        <Stack.Screen
+          options={{
+            title: '',
+            headerTransparent: true,
+            headerShown: false,
+          }}  
+          name='Map'
+          component={Map}
         />
 
       </Stack.Navigator>

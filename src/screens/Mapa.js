@@ -58,8 +58,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f8ff',
     padding: 8,
     borderRadius: 20,
-    
-    top: -620,
+  
+    top: -700,
     width: 350,
     left: 15,
   },
