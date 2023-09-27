@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import { View } from 'react-native';
-import MapView from "react-native-maps";
-import { requestForegroundPermissionsAsync, getCurrentPositionAsync, LocationObject } from 'expo-location';
+import MapView, {Marker} from "react-native-maps";
+import { 
+    requestForegroundPermissionsAsync, 
+    getCurrentPositionAsync, 
+    LocationObject, 
+    watchPositionAsync,
+    LocationAccuracy } from 'expo-location';
 import { styles } from "./styles";
 
 export default function Map() {
@@ -24,6 +29,17 @@ useEffect(() => {
     requestLocationPermissions();
 }, []);
 
+useEffect(() => {
+    watchPositionAsync({
+        accuracy: LocationAccuracy.Highest,
+        timeInterval: 1000,
+        distanceInterval: 1,
+    }, (response) => {
+        console.log("NOVA LOCALIZAÇÃO");
+        setLocation(response);
+    });
+}, []);
+
     return (
         <View style={styles.container}>
 
@@ -32,13 +48,19 @@ useEffect(() => {
         <MapView
         style={styles.map}
         initialRegion={{
-            latitude: location.coordss.latitude,
+            latitude: location.coords.latitude,
             longitude: location.coords.longitude,
             latitudeDelta: 0.005,
             longitudeDelta: 0.005,
         }}
         >
-            
+
+        <Marker
+            coordinate={{
+            latitude: location.coords.latitude,
+            longitude: location.coords.longitude,
+            }}
+        />
         </MapView>
         }
         </View>
