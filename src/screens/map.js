@@ -28,10 +28,18 @@ useEffect(() => {
         <View style={styles.container}>
 
         {
-        
+         location &&
         <MapView
-        styles={styles.map}
-        />
+        style={styles.map}
+        initialRegion={{
+            latitude: location.coordss.latitude,
+            longitude: location.coords.longitude,
+            latitudeDelta: 0.005,
+            longitudeDelta: 0.005,
+        }}
+        >
+            
+        </MapView>
         }
         </View>
     );
