@@ -13,7 +13,7 @@ export default function CadastrarDescarte({ navigation }) {
             <View style={styles.container}>
         
                 <LinearGradient style={{
-                    height: 835, 
+                    height: 955, 
                     width: 600,
                     borderRadius: 5}}
 	            colors={['#009582','#009452']}>
@@ -60,7 +60,7 @@ export default function CadastrarDescarte({ navigation }) {
                 <Text style={styles.ClSele}>CLIQUE PARA SELECIONAR</Text>
                 <Text style={styles.Ou}>Ou</Text>
                 <Text style={styles.Descreva}>Descreva o tipo de descarte...</Text>
-                <Text style={styles.Selecione}>Selecione sua unidade de descarte...</Text>
+               
 
 
                 <Text style={styles.Concluir}>CONCLUIR</Text>
@@ -112,10 +112,11 @@ const styles = StyleSheet.create({
     },
     lista:{
         width: 290,
-        top: -1000,
+        top: -1010,
         left: -40,
         color: '#808080',
         backgroundColor: '#FFFFFF',
+        
     },
 
     lista1: {
@@ -123,6 +124,7 @@ const styles = StyleSheet.create({
         borderColor: '#FFFFFF',
         backgroundColor: '#FFFFFF',
         fontSize: 11,
+
     },
    
 
@@ -145,22 +147,22 @@ const styles = StyleSheet.create({
     TextoTitulo: {
         color: '#f0fff0',
         fontSize: 28,
-        top: -1060,      
+        top: -1080,      
     },
 
     Text1: {
         color: '#7fffd4',
-        top: -1055,
+        top: -1080,
     },
 
     LogOut: {
         top: -1030,
-        left: -175,
+        left: -155,
     },
 
     Concluir: {
         color: '#5f9ea0',
-        top: -600,
+        top: -650,
         borderWidth: 3,
         borderRadius: 40,
         backgroundColor: '#f8f8ff',
@@ -176,7 +178,7 @@ const styles = StyleSheet.create({
 
     TirarFoto: {
         color: '#5f9ea0',
-        top: -1180,
+        top: -1160,
         left: 20,
         borderWidth: 3,
         borderRadius: 40,
@@ -191,7 +193,7 @@ const styles = StyleSheet.create({
 
     Importar: {
         color: '#5f9ea0',
-        top: -1206,
+        top: -1185,
         left: 140,
         borderWidth: 3,
         borderRadius: 40,
@@ -213,21 +215,21 @@ const styles = StyleSheet.create({
 
     Preencha: {
         color: '#f0fff0',
-        top: -930,
+        top: -940,
         left: -80,
     },
 
     Titulo: {
         color: '#7fffd4',
         fontSize: 13,
-        top: -1130,
+        top: -1110,
         left: -158,
     },
 
     Insira: {
        fontStyle: 'italic',
        color: '#f0fff0',
-       top: -895,
+       top: -900,
        left: -70,
        fontSize: 15,
     },
@@ -235,14 +237,14 @@ const styles = StyleSheet.create({
     Tipo: {
         color: '#7fffd4',
         fontSize: 13,
-        top: -1095,
+        top: -1070,
         left: -165,
     },
 
     Unidade: {
         color: '#7fffd4',
         fontSize: 13,
-        top: -1040,
+        top: -1020,
         left: -151,
     },
 
@@ -257,14 +259,14 @@ const styles = StyleSheet.create({
         height: 22,
         fontSize: 10,
         textAlign: 'center',
-        top: -855,
+        top: -860,
         left: -110,
         fontWeight: 'bold',
     },
 
     Ou: {
         color: '#f0fff0',
-        top: -877,
+        top: -880,
         left: -19,
     },
 
@@ -277,8 +279,8 @@ const styles = StyleSheet.create({
         height: 22,
         padding: 4,
         borderRadius: 40,
-        top: -897,
-        left: 90,
+        top: -900,
+        left: 95,
         fontSize: 10,
     },
 
@@ -289,13 +291,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
         padding: 3,
         borderRadius: 4,
-        top: -850,
+        top: -890,
         left: -95,
         fontSize: 10,
     },
 
     linhaverde1: {
-        top: -768,
+        top: -773,
         left: 45,
         width: 350,
     },
@@ -309,7 +311,7 @@ const styles = StyleSheet.create({
 
     linhaverde3: {
         left: 59,
-        top: -644,
+        top: -649,
         width: 350,
     },
 });

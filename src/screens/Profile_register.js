@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     },
 
     logo:{
-        top: 90,
+        top: 60,
         height: 180,
         width: 165,
         justifyContent: 'center',
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     cadastro:{
         color: '#FFFFFF',
         padding: 8,
-        top: -690,
+        top: -715,
         width: 370,
         left: 100,
         fontSize: 20,
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
         padding: 8,
         borderRadius: 10,
         marginBottom: 20,
-        top: -680,
+        top: -700,
         width: 370,
         height: -35,
         textAlign: 'left',
@@ -152,13 +152,13 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         marginBottom: 20,
         width: 300,
-        top: -650,
+        top: -680,
         textAlign: 'center',
     },
 
     facebook: {
         color: '#ffffff',
-        top: -660,
+        top: -700,
         left: 0,
         borderRadius: 40,
         marginBottom: 20,
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
 
     google: {
         color: '#000000',
-        top: -670,
+        top: -700,
         left: 0,
         borderRadius: 40,
         marginBottom: 20,
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
     continuar:{
         color: '#FFFFFF',
         padding: 8,
-        top: -660,
+        top: -700,
         width: 370,
         left: 110,
         fontSize: 20,

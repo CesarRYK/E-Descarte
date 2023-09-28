@@ -14,10 +14,6 @@ export default function Map() {
     const location = locationState[0];
     const setLocation = locationState[1];
 
-    
-    
-
-
     async function requestLocationPermissions() {
         const {granted} = await requestForegroundPermissionsAsync();
 
@@ -25,7 +21,6 @@ export default function Map() {
         const currentPosition = await getCurrentPositionAsync();
         setLocation(currentPosition);
         
-       
     }
     }
 
