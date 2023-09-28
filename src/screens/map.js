@@ -13,7 +13,11 @@ export default function Map() {
     const locationState = useState(null);
     const location = locationState[0];
     const setLocation = locationState[1];
+
     
+    
+
+
     async function requestLocationPermissions() {
         const {granted} = await requestForegroundPermissionsAsync();
 
@@ -35,7 +39,6 @@ useEffect(() => {
         timeInterval: 1000,
         distanceInterval: 1,
     }, (response) => {
-        console.log("NOVA LOCALIZAÇÃO");
         setLocation(response);
     });
 }, []);
@@ -46,6 +49,7 @@ useEffect(() => {
         {
          location &&
         <MapView
+        
         style={styles.map}
         initialRegion={{
             latitude: location.coords.latitude,
