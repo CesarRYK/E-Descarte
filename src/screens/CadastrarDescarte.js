@@ -129,9 +129,9 @@ const styles = StyleSheet.create({
     },
     import2:{
         color: '#5f9ea0',
-        top: -880,
-        left: 120,
-        borderWidth: 3,
+        top: -883,
+        left: 126,
+        borderWidth: 2,
         borderRadius: 40,
         backgroundColor: '#f8f8ff',
         borderColor: '#f5fffa',
@@ -139,11 +139,11 @@ const styles = StyleSheet.create({
         width: 100,
         textAlign: 'center',
         fontWeight: 'bold',
-        fontSize: 12,
+        fontSize: 11,
     },
     lista:{
         width: 290,
-        top: -1010,
+        top: -1020,
         left: -40,
         color: '#808080',
         backgroundColor: '#FFFFFF',
@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
 
     Preencha: {
         color: '#f0fff0',
-        top: -940,
+        top: -955,
         left: -80,
     },
 
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
     Insira: {
        fontStyle: 'italic',
        color: '#f0fff0',
-       top: -900,
+       top: -930,
        left: -70,
        fontSize: 15,
     },
@@ -290,14 +290,14 @@ const styles = StyleSheet.create({
         height: 22,
         fontSize: 10,
         textAlign: 'center',
-        top: -860,
+        top: -890,
         left: -110,
         fontWeight: 'bold',
     },
 
     Ou: {
         color: '#f0fff0',
-        top: -880,
+        top: -910,
         left: -19,
     },
 
@@ -310,7 +310,7 @@ const styles = StyleSheet.create({
         height: 22,
         padding: 4,
         borderRadius: 40,
-        top: -900,
+        top: -930,
         left: 95,
         fontSize: 10,
     },
