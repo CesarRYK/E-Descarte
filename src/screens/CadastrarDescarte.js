@@ -2,12 +2,26 @@ import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as React from 'react';
 import { List} from 'react-native-paper';
+import * as ImagePicker from 'expo-image-picker';
 
 
 
 export default function CadastrarDescarte({ navigation }) {
     const [expanded, setExpanded] = React.useState(true);
     const handlePress = () => setExpanded(!expanded);
+    const pickImageAsync = async () => {
+        let result = await ImagePicker.launchImageLibraryAsync({
+          allowsEditing: true,
+          quality: 1,
+        });
+        if (!result.canceled) {
+            console.log(result);
+          } else {
+            alert('Você não selecionou nenhuma imagem!');
+          }
+        };
+
+
 
     return(
             <View style={styles.container}>
@@ -48,7 +62,11 @@ export default function CadastrarDescarte({ navigation }) {
                 source={require('./imagens/LogOut.png')}
                 />
                 </Pressable>
-
+                
+                <Pressable style={styles.import2} theme="primary" label="Choose a photo" onPress={pickImageAsync}>
+                <Text> IMPORTAR</Text>
+                </Pressable>
+            
                 <Text style={styles.TextoTitulo}>E-DESCARTE</Text>
                 <Text style={styles.Text1}>DESCARTES</Text>
 
@@ -65,7 +83,6 @@ export default function CadastrarDescarte({ navigation }) {
 
                 <Text style={styles.Concluir}>CONCLUIR</Text>
                 <Text style={styles.TirarFoto}>TIRAR FOTO</Text>
-                <Text style={styles.Importar}> IMPORTAR</Text>
                 
 
                 <Text style={styles.Titulo}>TÍTULO</Text>
@@ -109,6 +126,20 @@ const styles = StyleSheet.create({
         borderRadius: 60,
         borderColor: "#00fa9a",
         borderWidth: 5,
+    },
+    import2:{
+        color: '#5f9ea0',
+        top: -880,
+        left: 120,
+        borderWidth: 3,
+        borderRadius: 40,
+        backgroundColor: '#f8f8ff',
+        borderColor: '#f5fffa',
+        padding: 2,
+        width: 100,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 12,
     },
     lista:{
         width: 290,
