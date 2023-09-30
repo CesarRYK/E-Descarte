@@ -100,7 +100,12 @@ export default function CadastrarDescarte({ navigation }) {
                     style={styles.lista2}
                     
                     />
-                    <List.Item title="Unidade 2 - Rua Leonardo M." 
+                    <List.Item title="Unidade 02 - Avenida Mario Ypiranga" 
+                    titleStyle={styles.fonteLista2}
+                    style={styles.lista2}
+                    />
+
+                    <List.Item title="Unidade 03 - Ponto de Coleta Amazonas Shopping" 
                     titleStyle={styles.fonteLista2}
                     style={styles.lista2}
                     />
