@@ -1,26 +1,32 @@
 import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
+import ImageViewer from './ImageViewer';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as React from 'react';
 import { List} from 'react-native-paper';
 import * as ImagePicker from 'expo-image-picker';
 
+import { useState } from 'react';
 
+const PlaceholderImage = require('./imagens/ImgDescarte.png');
 
 export default function CadastrarDescarte({ navigation }) {
     const [expanded, setExpanded] = React.useState(true);
     const handlePress = () => setExpanded(!expanded);
+    const [selectedImage, setSelectImage] = useState(null);
+    
+    
     const pickImageAsync = async () => {
         let result = await ImagePicker.launchImageLibraryAsync({
           allowsEditing: true,
           quality: 1,
         });
         if (!result.canceled) {
-            console.log(result);
+            setSelectImage(result.assets[0].uri);
+            setShowAppOptions(true);
           } else {
             alert('Você não selecionou nenhuma imagem!');
           }
         };
-
 
 
     return(
@@ -34,11 +40,11 @@ export default function CadastrarDescarte({ navigation }) {
               </LinearGradient>
                 
 
-                <Image
-                style={styles.imagem}
-                source={require('./imagens/ImgDescarte.png')}
+              <ImageViewer
+         placeholderImageSource={PlaceholderImage} 
+         selectedImage={selectedImage}
+        />
                 
-            />
             
 
                 <Image
