@@ -1,8 +1,17 @@
-import {View, Text, StyleSheet, TouchableOpacity, Pressable, Image} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Pressable, Image, TextInput} from 'react-native';
 import { Entypo } from "@expo/vector-icons";
 import { LinearGradient } from 'expo-linear-gradient';
+import React, {useState} from 'react';
 
- export default function Login({ navigation }) {
+
+
+export default Login; 
+
+
+ function Login({ navigation }) {
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
      return(
         <View style={styles.container} >
         
@@ -26,12 +35,15 @@ import { LinearGradient } from 'expo-linear-gradient';
             
             <TouchableOpacity>
                 
-            <Text style={styles.textColor}>Insira seu email ou número de telefone...
-                </Text>
+            <TextInput placeholder="Insira seu e-mail ou telefone..." 
+            style={styles.textColor} onChangeText={text=>setNome(text)} />
+                
+                
+                
                 </TouchableOpacity>
             <TouchableOpacity>
-                <Text style={styles.textColor}>Insira sua senha...
-                </Text>
+            <TextInput placeholder="Insira sua senha..." 
+            style={styles.textColor} onChangeText={text=>setNome(text)} />
             </TouchableOpacity>
                 
             <TouchableOpacity>
@@ -47,7 +59,7 @@ import { LinearGradient } from 'expo-linear-gradient';
                 </TouchableOpacity>
 
 
-                
+                <TouchableOpacity>
                 <Text style={styles.facebook}>Continuar com Facebook  {'\r'}
                     <Entypo
                     name='facebook'
@@ -57,8 +69,9 @@ import { LinearGradient } from 'expo-linear-gradient';
                     >
                 </Entypo>
                     </Text>
-                
-
+                    </TouchableOpacity>
+                    
+                    <TouchableOpacity>
                 <Text style={styles.google}>Continuar com Google  {'\r'}
                 
                     <Image
@@ -69,7 +82,7 @@ import { LinearGradient } from 'expo-linear-gradient';
                 />
                 
                     </Text>
-                
+                    </TouchableOpacity>
         </View>
 
         

@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, Pressable, Image, TextInput} from 'react-native';
+import {View, Text, StyleSheet, Pressable, Image, TextInput, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
 import { Entypo } from "@expo/vector-icons";
 import { LinearGradient } from 'expo-linear-gradient';
@@ -70,7 +70,8 @@ const [senha, setSenha] = useState('');
             </Pressable>
 
             <Text style={styles.continuar}>Ou continuar com</Text>
-
+            
+            <TouchableOpacity>
             <Text style={styles.facebook}>Continuar com Facebook  {'\r'}
                 <Entypo
                     name='facebook'
@@ -80,8 +81,9 @@ const [senha, setSenha] = useState('');
                     >
                 </Entypo>
                     </Text>
-                
+                    </TouchableOpacity>
 
+                    <TouchableOpacity>
                 <Text style={styles.google}>Continuar com Google  {'\r'}
                     <Image
                 style={styles.imagemGoogle}
@@ -91,6 +93,7 @@ const [senha, setSenha] = useState('');
                 />
                 
                     </Text>
+                    </TouchableOpacity>
         </View>
     );
 }

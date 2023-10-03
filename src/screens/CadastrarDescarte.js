@@ -28,7 +28,6 @@ export default function CadastrarDescarte({ navigation }) {
           }
         };
 
-
     return(
             <View style={styles.container}>
         
@@ -39,14 +38,11 @@ export default function CadastrarDescarte({ navigation }) {
 	            colors={['#009582','#009452']}>
               </LinearGradient>
                 
-
               <ImageViewer
          placeholderImageSource={PlaceholderImage} 
          selectedImage={selectedImage}
         />
-                
             
-
                 <Image
                 style={styles.linhaverde1}
                 source={require('./imagens/LinhaVerde.png')}

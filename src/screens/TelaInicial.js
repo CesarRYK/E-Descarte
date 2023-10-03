@@ -31,6 +31,7 @@ export default function TelaInicial({ navigation }) {
             <Text style={styles.TarefasTexto}>Tarefas</Text>
             </Pressable>
 
+            
             <Pressable onPress={() => navigation.navigate('Map')}>
             <Text style={styles.VerDescartesTexto}>Mapa de Descartes</Text>
             </Pressable>
@@ -62,7 +63,7 @@ export default function TelaInicial({ navigation }) {
 
             
 
-               
+                
                <Pressable onPress={() => navigation.navigate('Map')}
                >
                 <Image
@@ -70,6 +71,7 @@ export default function TelaInicial({ navigation }) {
                 source={require('./imagens/localizacao.png')}
                 />
                 </Pressable>
+                
 
                 <Pressable onPress={() => navigation.navigate('Tarefas')}
                >

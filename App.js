@@ -12,7 +12,6 @@ import Registro from './src/screens/Profile_register';
 import TelaInicial from './src/screens/TelaInicial';
 import Perfil from './src/screens/Perfil';
 import Inicio from './src/screens/TabNavigation';
-import Mapa from './src/screens/Mapa';
 import Rewards from './src/screens/Rewards';
 import Tarefas from './src/screens/Tarefas';
 import Sugestão from './src/screens/Sugestões';
@@ -97,16 +96,6 @@ export default function App() {
           component={Inicio}
         />
      
-        <Stack.Screen
-          options={{
-            title: '',
-            headerTransparent: true,
-            headerShown: false,
-          }}  
-          name='Mapa'
-          component={Mapa}
-        />
-
       <Stack.Screen
         options={{
           title: '',

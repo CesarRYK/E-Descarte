@@ -33,6 +33,7 @@ function Sugestão({ navigation }) {
             </Text>
             </TouchableOpacity>
             
+            <TouchableOpacity>
             <View>
             <Feather style={styles.box}
                 name='inbox'
@@ -55,6 +56,7 @@ function Sugestão({ navigation }) {
                 
                 />
             </View>
+            </TouchableOpacity>
         </View>
     );
 }
