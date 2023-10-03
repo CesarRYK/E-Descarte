@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     textColor: {
         color: '#f0fff0',
         fontSize: 28,
-        top: -870,
+        top: -890,
                
     },
 
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
 
     Text3: {
         color: '#7fffd4',
-        top: -870,
+        top: -890,
     
     },
 

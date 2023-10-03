@@ -176,14 +176,14 @@ const styles = StyleSheet.create({
 
     EDescarte: {
         color: '#fff',
-        top: -850,
+        top: -890,
         fontSize: 17,
     },
 
     Filtro: {
         color: '#7FFFD4',
         fontSize: 13,
-        top: -850,
+        top: -890,
     },
 
     stretch: {

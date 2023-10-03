@@ -40,16 +40,10 @@ const styles = StyleSheet.create({
     },
 
     Configuracoes: {
-        color: '#5f9ea0',
-        borderWidth: 1,
-        borderColor: '#000000',
-        backgroundColor: '#f8f8ff',
-        padding: 5,
-        marginBottom: 0,
-        borderRadius: 10,
-        top: 80,
-        left: 5,
-        width: 200,
+        color: '#f0fff0',
+        top: 60,
+        left: 140,
+        fontSize: 17,
     },
 
     politica: {

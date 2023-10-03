@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
+import {View, Text, StyleSheet, Image, Pressable, TouchableOpacity} from 'react-native';
 import ImageViewer from './ImageViewer';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as React from 'react';
@@ -77,15 +77,21 @@ export default function CadastrarDescarte({ navigation }) {
                 <Text style={styles.Preencha}>2- Preencha os campos abaixo:</Text>
                 <Text style={styles.Insira}>Insira um título ao seu descarte...</Text>
 
+                <TouchableOpacity>
                 <Text style={styles.ClSele}>CLIQUE PARA SELECIONAR</Text>
+                </TouchableOpacity>
+
                 <Text style={styles.Ou}>Ou</Text>
                 <Text style={styles.Descreva}>Descreva o tipo de descarte...</Text>
                
 
-
+                <TouchableOpacity>
                 <Text style={styles.Concluir}>CONCLUIR</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity>
                 <Text style={styles.TirarFoto}>TIRAR FOTO</Text>
-                
+                </TouchableOpacity>
 
                 <Text style={styles.Titulo}>TÍTULO</Text>
                 <Text style={styles.Tipo}>TIPO</Text>
