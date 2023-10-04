@@ -82,8 +82,10 @@ export default function CadastrarDescarte({ navigation }) {
                 </TouchableOpacity>
 
                 <Text style={styles.Ou}>Ou</Text>
+
+                <TouchableOpacity>
                 <Text style={styles.Descreva}>Descreva o tipo de descarte...</Text>
-               
+                </TouchableOpacity>
 
                 <TouchableOpacity>
                 <Text style={styles.Concluir}>CONCLUIR</Text>
