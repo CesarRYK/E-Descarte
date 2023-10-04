@@ -22,7 +22,6 @@ export default function TelaInicial({ navigation }) {
             <Text style={styles.Text2}>Vamos começar!</Text>
 
 
-
             <Text Pressable onPress={() => navigation.navigate('TelaEducacional')}>
                 Teste
             </Text>
@@ -43,16 +42,11 @@ export default function TelaInicial({ navigation }) {
             <Pressable onPress={() => navigation.navigate('Sugestão')}>
             <Text style={styles.SugestoesTexto}>Sugestões</Text>
             </Pressable>
-
-
-            
-           
-            
-           
-
-
-
-
+        
+            <Pressable onPress={() => navigation.navigate('TelaEducacional')}>
+            <Text style={styles.Educacional}>educaçãokkk</Text>
+            </Pressable>
+    
             <EvilIcons style={styles.Usuario}
                 name='user'
                 size={140}
@@ -60,10 +54,6 @@ export default function TelaInicial({ navigation }) {
                 
                 />
 
-
-            
-
-                
                <Pressable onPress={() => navigation.navigate('Map')}
                >
                 <Image
@@ -95,15 +85,8 @@ export default function TelaInicial({ navigation }) {
                 style={styles.Sugestões}
                 source={require('./imagens/melhoria.png')}
                 />
+
                 </Pressable>
-
-
-
-
-
-
-            
-
 
         </View>
     );
@@ -189,7 +172,7 @@ const styles = StyleSheet.create({
     },
 
     Usuario: {
-        top: -1020,
+        top: -1075,
         left: -90,
     },
 
@@ -250,6 +233,19 @@ const styles = StyleSheet.create({
         left: 69,
     },
 
+        Educacional: {
+        width: 80,
+        resizeMode: 'contain',
+        justifyContent: 'center',
+        borderWidth: 0,
+        borderColor: '#000000',
+        backgroundColor: '#fff',
+        padding: 10,
+        borderRadius: 40,
+        top: -900,
+        left: 69,
+    },
+
     localizacao: {
         width: 80,
         height: 80,
@@ -260,7 +256,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -965,
+        top: -1025,
         left: -75,
     }
 
