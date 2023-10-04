@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         color: '#f0fff0',
         top: 60,
         left: 140,
-        fontSize: 17,
+        fontSize: 17, 
     },
 
     politica: {

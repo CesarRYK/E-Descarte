@@ -3,7 +3,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { StyleSheet } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 
 import TelaInicial from './TelaInicial'
 import Perfil from './Perfil'
