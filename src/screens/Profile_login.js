@@ -12,6 +12,11 @@ export default Login;
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
+    const [userMail, setUserMail] = useState('');
+    const [userPass, setUserPass] = useState('');
+    function userLogin(){
+        alert('A função foi adicionada..');
+    }
      return(
         <View style={styles.container} >
         
@@ -36,19 +41,27 @@ export default Login;
             <TouchableOpacity>
                 
             <TextInput placeholder="Insira seu e-mail ou telefone..." 
-            style={styles.textColor} onChangeText={text=>setNome(text)} />
+            style={styles.textColor}
+             
+             value={userMail}
+             onChangeText={setUserMail}
+             />
                 
                 
                 
                 </TouchableOpacity>
             <TouchableOpacity>
             <TextInput secureTextEntry={true} placeholder="Insira sua senha..." 
-            style={styles.textColor} onChangeText={text=>setNome(text)} />
+            style={styles.textColor} 
+            value={userPass}
+             onChangeText={setUserPass}
+            
+            />
             </TouchableOpacity>
                 
             <TouchableOpacity>
             <Pressable
-            onPress={() => navigation.navigate('Inicio')}>
+            onPress={userLogin}>
                 <Text style={styles.Avançar}>Continuar</Text>
             </Pressable>
                 <Text style={styles.continuar}>Ou continuar com</Text>
