@@ -44,7 +44,7 @@ export default function TelaInicial({ navigation }) {
             </Pressable>
         
             <Pressable onPress={() => navigation.navigate('TelaEducacional')}>
-            <Text style={styles.Educacional}>educaçãokkk</Text>
+            <Text style={styles.EducacionalTexto}>Informativo</Text>
             </Pressable>
     
             <EvilIcons style={styles.Usuario}
@@ -85,7 +85,13 @@ export default function TelaInicial({ navigation }) {
                 style={styles.Sugestões}
                 source={require('./imagens/melhoria.png')}
                 />
+                </Pressable>
 
+                <Pressable onPress={() => navigation.navigate('TelaEducacional')}>
+                <Image
+                style={styles.Educacional}
+                source={require('./imagens/Reciclagem.png')}
+                />
                 </Pressable>
 
         </View>
@@ -116,7 +122,7 @@ const styles = StyleSheet.create({
 
     Text1: {
         color: '#fff',
-        top: -820,
+        top: -830,
         left: 10,
         fontSize: 20,
         textAlign: 'center',
@@ -125,7 +131,7 @@ const styles = StyleSheet.create({
 
     Text2: {
         color: '#fff',
-        top: -820,
+        top: -835,
         left: 45,
         fontSize: 20,
     },
@@ -137,22 +143,22 @@ const styles = StyleSheet.create({
     },
 
     TarefasTexto:{
-        top: -520,
-        left: -70,
+        top: -545,
+        left: -95,
         color: '#ffffff',
         fontWeight: 'bold',
         fontSize: 17,
     },
     VerDescartesTexto:{
-        top: -710,
-        left: -68,
+        top: -734,
+        left: -95,
         fontWeight: 'bold',
         fontSize: 15,
         color: '#ffffff',
     },
 
     EdPointsTexto:{
-        top: -730,
+        top: -755,
         left: 70,
         fontWeight: 'bold',
         fontSize: 15,
@@ -160,7 +166,7 @@ const styles = StyleSheet.create({
     },
 
     SugestoesTexto:{
-        top: -582,
+        top: -607,
         left: 70,
         color: '#ffffff',
         fontWeight: 'bold',
@@ -172,7 +178,7 @@ const styles = StyleSheet.create({
     },
 
     Usuario: {
-        top: -1075,
+        top: -1055,
         left: -90,
     },
 
@@ -199,8 +205,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -875,
-        left: -70,
+        top: -930,
+        left: -95,
 
     },
 
@@ -214,7 +220,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -1125,
+        top: -1175,
         left: 70,
 
     },
@@ -229,12 +235,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -1035,
+        top: -1090,
         left: 69,
     },
 
         Educacional: {
         width: 80,
+        height: 80,
         resizeMode: 'contain',
         justifyContent: 'center',
         borderWidth: 0,
@@ -242,8 +249,20 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -900,
-        left: 69,
+        top: -1030,
+        left: -95,
+    },
+
+        EducacionalTexto:{
+        top: -490,
+        left: -95,
+        color: '#ffffff',
+        fontWeight: 'bold',
+        fontSize: 15,
+        borderColor: '#006400',
+        borderRadius: 1,
+        shadowOpacity: 100,
+        shadowRadius: 10,
     },
 
     localizacao: {
@@ -256,8 +275,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         padding: 10,
         borderRadius: 40,
-        top: -1025,
-        left: -75,
+        top: -1015,
+        left: -95,
     }
 
 
