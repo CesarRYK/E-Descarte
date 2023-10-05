@@ -2,7 +2,8 @@ import {View, Text, StyleSheet, TouchableOpacity, Pressable, Image, TextInput} f
 import { Entypo } from "@expo/vector-icons";
 import { LinearGradient } from 'expo-linear-gradient';
 import React, {useState} from 'react';
-
+import { auth } from './firebase.config';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 
 export default Login; 
@@ -15,7 +16,19 @@ export default Login;
     const [userMail, setUserMail] = useState('');
     const [userPass, setUserPass] = useState('');
     function userLogin(){
-        alert('A função foi adicionada..');
+        signInWithEmailAndPassword(auth, userMail, userPass)
+            .then((userCredential) => {
+            const user = userCredential.user;
+            {navigation.navigate('TelaInicial')}
+            alert('Login efetuado..');
+            console.log(user);
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorMessage);
+                })
+
     }
      return(
         <View style={styles.container} >
@@ -233,3 +246,4 @@ const styles = StyleSheet.create({
 
     },
 );
+
