@@ -49,12 +49,12 @@ const [senha, setSenha] = useState('');
 
 
 
-            <TextInput secureTextEntry={true}placeholder="Insira sua senha..." 
+            <TextInput secureTextEntry={true} placeholder="Insira sua senha..." 
             style={styles.textColor} onChangeText={text=>setNome(text)} />
 
 
 
-            <TextInput secureTextEntry={true}placeholder="Repita sua senha..." 
+            <TextInput secureTextEntry={true} placeholder="Repita sua senha..." 
             style={styles.textColor} onChangeText={text=>setNome(text)} />
 
 

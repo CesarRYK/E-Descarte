@@ -42,7 +42,7 @@ export default Login;
                 
                 </TouchableOpacity>
             <TouchableOpacity>
-            <TextInput placeholder="Insira sua senha..." 
+            <TextInput secureTextEntry={true} placeholder="Insira sua senha..." 
             style={styles.textColor} onChangeText={text=>setNome(text)} />
             </TouchableOpacity>
                 
