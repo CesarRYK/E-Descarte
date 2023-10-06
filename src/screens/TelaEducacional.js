@@ -8,7 +8,7 @@ export default function TelaEducacional() {
             <ScrollView style={styles.scrollView}>
 
             <LinearGradient style={{
-                height: 1730, 
+                height: 1770, 
                 width: 394, 
                 borderRadius: 5}}
 	            colors={['#009582','#009452']}>
@@ -74,21 +74,23 @@ const styles = StyleSheet.create({
 
         text: {
           fontSize: 17,
-          top: -520,
-          textAlign: 'auto',
-          
+          top: -530,
+          textAlign: 'justify',
+          padding: 15,
         },
 
         text2: {
             fontSize: 17,
-            top: -190,
-            textAlign: 'auto',
+            top: -240,
+            textAlign: 'justify',
+            padding: 15,
           },
 
           text3: {
             fontSize: 17,
-            top: 170,
-            textAlign: 'auto',
+            top: 90,
+            textAlign: 'justify',
+            padding: 15,
           },
 
         imagem: {
@@ -104,7 +106,7 @@ const styles = StyleSheet.create({
         imagem2: {
             width: 370,
             height: 280,
-            top: 390,
+            top: 400,
             left: 10,
             borderRadius: 60,
             borderColor: "#00fa9a",
@@ -114,7 +116,7 @@ const styles = StyleSheet.create({
         imagem3: {
             width: 370,
             height: 280,
-            top: 660,
+            top: 700,
             left: 10,
             borderRadius: 60,
             borderColor: "#00fa9a",
